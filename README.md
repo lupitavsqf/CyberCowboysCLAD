@@ -98,7 +98,8 @@ Lessons are grouped by level under gold section headers, each card showing thumb
 
 ### 🐎 Riding it
 
-A cowboy marks where you are. Ahead of him, four markers show where your next four footfalls will land — your head dips once per stride when your heel strikes, and the Lens reads that rhythm to work out your cadence. **Change Hand** mirrors the course about its own centre line, so you can ride the same pattern on the opposite rein.
+A cowboy marks where you are. Ahead of him, four markers show where the next four strides will land — the horse's rhythm carries up through the saddle into a rise and fall of the rider's head once per stride, and the Lens reads that tempo. **Change Hand** mirrors the course about its own centre line, so you can ride the same pattern on the opposite rein.
+
 
 | The cowboy predicts your next steps | Change hand — the mirror image |
 |:--:|:--:|
