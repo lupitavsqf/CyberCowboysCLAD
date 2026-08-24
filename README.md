@@ -44,7 +44,8 @@ The big shift: **you no longer have to turn to the WebView to control the lesson
 
 ### 🐎 The Lens now watches the rider
 
-- 👣 **Step prediction** — your head dips once per stride at heel strike. The Lens finds those troughs, works out your cadence, combines it with your smoothed velocity, and drops **four markers where your next four footfalls will land**. Each marker can carry its own colour, so how far ahead a guess is — and how much less it's worth trusting — reads at a glance. They hide below a walking pace so they don't pile up under you when you stand still.
+- 🐴 **Stride prediction** — the rider's head rises and falls once per stride as the horse moves beneath them. The Lens finds those troughs, works out the tempo in strides per minute, combines it with your smoothed velocity, and drops **four markers where the next four strides will land**. Each marker can carry its own colour, so how far ahead a guess is — and how much less it's worth trusting — reads at a glance. They hide at the halt so they don't pile up underneath you when you're standing.
+ Each marker can carry its own colour, so how far ahead a guess is — and how much less it's worth trusting — reads at a glance. They hide below a walking pace so they don't pile up under you when you stand still.
 - 🔵 **Wearer dot** — a marker rides the floor beneath your feet, smoothed so it doesn't copy the nervous sway of head tracking.
 - ⏱️ **Stop zones that actually stop you** — stand on a stop decal and the floating label counts **5-4-3-2-1 and finishes on GO** with a chime. Step off early and it resets. While you're holding, the label slides forward so the countdown isn't sitting on your nose.
 - 🔢 **Number tags at sight level** — `number_tag` values render as floating text at eye height instead of on the floor, billboarded to you and gently bobbing, so you read the course without looking down.
