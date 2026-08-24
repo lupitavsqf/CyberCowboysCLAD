@@ -95,6 +95,17 @@ section{padding-top:56px}
   color:var(--sand-dark);font-weight:600;margin-bottom:6px;
 }
 
+/* ── provenance tags ── */
+.tag{
+  display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.16em;
+  text-transform:uppercase;font-weight:700;padding:3px 9px;border-radius:3px;
+  vertical-align:2px;margin-left:10px;white-space:nowrap;
+}
+.tag.base{border:1px solid var(--fence-dark);color:var(--sand-dark);background:rgba(74,47,56,.35)}
+.tag.week{border:1px solid var(--gold-dark);color:var(--gold-bright);background:rgba(244,196,48,.1)}
+.legend{display:flex;gap:22px;flex-wrap:wrap;margin:18px 0 0;font-size:14px;align-items:center}
+.legend span{display:flex;align-items:center;gap:9px}
+
 /* ── prompt + result blocks ── */
 .prompt{
   background:rgba(26,15,15,.55);border:1px solid var(--wine);
@@ -143,6 +154,7 @@ td:first-child{color:var(--cream);font-weight:500;white-space:nowrap}
   padding:20px 24px;margin:26px 0;
 }
 .note b{color:var(--gold);font-weight:600}
+.note.spot{border-color:var(--gold-dark);background:rgba(244,196,48,.07)}
 .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px;margin-top:24px}
 .card{
   background:rgba(74,47,56,.32);border:1px solid var(--wine);border-radius:10px;padding:20px 22px;
@@ -163,6 +175,7 @@ footer b{color:var(--gold)}
   .phases::before{left:13px}
   .phase::before{left:-40px;width:28px;height:28px;font-size:12px}
   .bar nav{gap:14px;margin-left:0;width:100%}
+  .tag{margin-left:0;margin-top:6px}
 }
 </style>
 </head>
@@ -182,17 +195,19 @@ footer b{color:var(--gold)}
 <main>
 
 <header class="hero">
-  <div class="eyebrow">AI-assisted workflow</div>
+  <div class="eyebrow">AI-assisted workflow · Hackathon #2 · Guide</div>
   <h1>From a website to a Lens, <em>one prompt at a time</em>.</h1>
   <p class="stand">CyberCowboys began as a browser app with a SQLite database behind it. This log
   records how closed-loop agentic development turned that web app into a Spectacles game — the
-  prompts, the files handed over as input, and what came back. The artwork — obstacle references,
-  menu screens and every button texture — I made myself; CLAD gave it structure and behaviour.</p>
+  prompts, the files handed over as input, and what came back. The artwork is mine: obstacle
+  references, menu screens and every button texture, some generated with Gemini and ChatGPT, others
+  drawn from scratch, all finished by hand in Adobe Illustrator. CLAD gave it structure and
+  behaviour.</p>
   <div class="meta">
     <div><b>Project</b>CyberCowboys</div>
     <div><b>Platform</b>Snap Spectacles</div>
     <div><b>Backend</b>cybercowboys-back.fly.dev</div>
-    <div><b>Theme</b>Guide</div>
+    <div><b>Theme</b>Guide · Week 2</div>
   </div>
 </header>
 
@@ -215,6 +230,18 @@ footer b{color:var(--gold)}
     WebView with a real Lens that renders the arena as 3D objects on the floor, fed live from the
     same tables over a WebSocket.</p>
   </div>
+
+  <h3 style="margin-top:34px">What is new for Hackathon #2</h3>
+  <p>The backend, the schema and the first version of the Lens predate this hackathon, and the log
+  below is honest about which is which. <strong>Guide week was about making the Lens read the rider
+  rather than only draw the floor</strong> — stride prediction on the approach to a fence, stop
+  zones that hold you, the controls moved out of the WebView into native AR panels, the mirror
+  operation moved onto the server so instructor and rider can no longer disagree, and a connection
+  layer that survives arena wifi.</p>
+  <div class="legend">
+    <span><i class="tag base">Pre-existing</i> built before the hackathon</span>
+    <span><i class="tag week">Week 2 · Aug 17–23</i> built with CLAD during Guide week</span>
+  </div>
 </section>
 
 <div class="rule"></div>
@@ -222,12 +249,13 @@ footer b{color:var(--gold)}
 <section id="phases">
   <h2>The workflow</h2>
   <p>Each phase below is a prompt or short sequence of prompts, the files handed over as input, and
-  what came out the other side.</p>
+  what came out the other side. Phases one to three are the foundation the hackathon week built on;
+  phases four to seven are this week's work.</p>
 
   <div class="phases">
 
     <div class="phase" data-n="1">
-      <div class="when">Phase one · leaving the WebView</div>
+      <div class="when">Phase one · leaving the WebView <i class="tag base">Pre-existing</i></div>
       <h3>Render the arena as real 3D objects</h3>
       <p>The first substantial ask. The web app already knew how to describe a course; the Lens
       needed to draw one.</p>
@@ -261,7 +289,7 @@ stores pixels, so give me one scale input that converts between them.</pre>
     </div>
 
     <div class="phase" data-n="2">
-      <div class="when">Phase two · finding the floor</div>
+      <div class="when">Phase two · finding the floor <i class="tag base">Pre-existing</i></div>
       <h3>Path Pioneer, handed over as a .zip</h3>
       <p>The arena rendered, but it hung at eye level. Rather than describe floor detection, I gave
       the working sample as input and asked for the algorithm to be lifted out of it.</p>
@@ -300,7 +328,7 @@ Two things it must handle that the sample doesn't:
     </div>
 
     <div class="phase" data-n="3">
-      <div class="when">Phase three · 3D assets</div>
+      <div class="when">Phase three · 3D assets <i class="tag base">Pre-existing</i></div>
       <h3>Example .zip in, working .fbx .zip out</h3>
       <p>The hardest thing to get right by description alone. The trick was giving a
       <em>working</em> import as the example, so the folder structure and supporting files came back
@@ -309,7 +337,7 @@ Two things it must handle that the sample doesn't:
         <div class="lbl">Attached</div>
         <pre>working-fbx-example.zip   —  an asset that already imports cleanly into Lens Studio
 cone.png, barrel.png, cavaletti.png, stop.png, fence.png
-                          —  reference images made in Gemini and Adobe Illustrator</pre>
+                          —  reference images I made in Gemini and Adobe Illustrator</pre>
       </div>
       <div class="prompt">
         <div class="lbl">Prompt</div>
@@ -341,19 +369,21 @@ because they get laid on the floor at local y = 0.</pre>
     </div>
 
     <div class="phase" data-n="4">
-      <div class="when">Phase four · the interface</div>
-      <h3>Textures I made, buttons CLAD wired up</h3>
+      <div class="when">Phase four · the interface <i class="tag week">Week 2 · Aug 17–23</i></div>
+      <h3>Getting the controls out of the WebView</h3>
+      <p>The rider shouldn't have to turn away from the arena to change the lesson. This week the
+      controls that mattered moved into AR as native panels and buttons.</p>
       <p>The look came first and by hand. I made the start-menu artwork and every button texture
       myself — some generated with <strong>Gemini</strong> and <strong>ChatGPT</strong>, others drawn
-      and finished in <strong>Adobe Illustrator</strong>: the main logo, Start and Credits, Change
-      Direction, Calibration, Choose Lesson, Home, Edit, Reload and the info buttons.</p>
-      <p>Because the artwork was already resolved, the prompt could be entirely about
+      from scratch, all finished in <strong>Adobe Illustrator</strong>: the main logo, Start and
+      Credits, Change Direction, Calibration, Choose Lesson, Home, Edit, Reload and the info buttons.
+      Because the artwork was already resolved, the prompt could be entirely about
       <em>behaviour</em> rather than appearance.</p>
       <div class="prompt attach">
         <div class="lbl">Attached</div>
         <pre>mainlogo.png · startbutton.png · creditsbutton.png · homebutton.png
 changedirections.png · calibration.png · chooselesson.png · refresh.png
-        —  textures made in Gemini, ChatGPT and Adobe Illustrator</pre>
+        —  textures I made in Gemini, ChatGPT and Adobe Illustrator</pre>
       </div>
       <div class="prompt">
         <div class="lbl">Prompt</div>
@@ -376,12 +406,16 @@ real interactive UI — I don't need any art generated, only the behaviour.
         <span class="file">StartMenu.ts</span> owning the screen flow, and a small script per button
         rather than one monolith. The shared-panel instruction turned into
         <span class="file">InfoPanelTyped.ts</span> plus a per-button content carrier, which is why
-        two buttons can never race each other over the panel's state.
+        two buttons can never race each other over the panel's state. The same pass produced the
+        in-AR lesson browser and the arena-code editor, so a rider can pick a course and join
+        someone else's arena without ever opening the web page.
       </div>
       <div class="files">
         <span class="file new">StartMenu.ts</span>
         <span class="file new">InfoPanelTyped.ts</span>
         <span class="file new">InfoPanelButtonTyped.ts</span>
+        <span class="file new">ChooseLessonMenuTyped.ts</span>
+        <span class="file new">ArenaIdEditorTyped.ts</span>
         <span class="file new">ChangeDirectionButtonTyped.ts</span>
         <span class="file new">RegenerateCodeButtonTyped.ts</span>
         <span class="file new">StartArenaButtonTyped.ts</span>
@@ -391,38 +425,57 @@ real interactive UI — I don't need any art generated, only the behaviour.
     </div>
 
     <div class="phase" data-n="5">
-      <div class="when">Phase five · guidance</div>
-      <h3>Reading the rider, not just drawing the floor</h3>
-      <p>With the arena on the ground, the Lens could start guiding the person inside it. This is
-      where the project met the theme.</p>
+      <div class="when">Phase five · guidance <i class="tag week">Week 2 · Aug 17–23</i></div>
+      <h3>Seeing the distance instead of being told it</h3>
+      <p>This is where the project met the theme. Riding a line into a jump is a counting problem:
+      the distance from the corner to the fence is a fixed number of strides, and the skill is
+      seeing it early enough to adjust. It is normally taught by an instructor calling the count
+      from the ground — <strong>which is exactly the channel the riders this project was built for
+      have the hardest time receiving</strong>. Four markers projected onto the approach are that
+      instruction made visible, and they land where the rider's eyes already are: up and forward,
+      toward the fence.</p>
       <div class="prompt">
         <div class="lbl">Prompt</div>
         <pre>I want the Lens to guide the rider rather than only draw the course.
 
-A person's head dips once per stride, at the moment the heel strikes. Track the
-camera's Y position, find those local minima, and use the interval between them
-as cadence. Combine that with smoothed horizontal velocity to predict where the
-next four footfalls will land, and drop a marker at each one.
+The specific job: on the approach to a fence, show the rider where their next
+strides will land, so they can see the distance instead of being told it.
+
+The rider's head rises and falls once per stride as the horse moves beneath
+them. Track the camera's Y position, find those local minima, and use the
+interval between them as the tempo. Combine that with smoothed horizontal
+velocity to predict where the next four strides will land, and drop a marker at
+each one. Give each marker its own colour, so how far ahead a guess is — and
+how much less it's worth trusting — reads at a glance.
 
 Requirements:
 - A marker under the wearer that follows them, smoothed so it doesn't copy head
   tracking jitter.
-- The four predicted markers should hide below a walking speed threshold, so
-  they don't pile up when someone stands still.
+- The four predicted markers should hide at the halt, so they don't pile up
+  underneath someone standing still.
 - Expose the bob threshold and the speed threshold as inputs so I can tune them
-  on device.</pre>
+  on device — the movement through the saddle is nothing like walking on foot,
+  and it changes between walk, trot and canter.</pre>
       </div>
       <div class="result">
         <b>What came back</b>
-        The step-prediction system inside <span class="file">ArenaStreamerTyped.ts</span>. Both
+        The stride-prediction system inside <span class="file">ArenaStreamerTyped.ts</span>. Both
         thresholds became Inspector inputs — <span class="file">stepBobThresholdCm</span> and
         <span class="file">stepMinSpeedMps</span> — which is what made it tunable in a real arena
-        instead of only in the editor.
+        instead of only in the editor. The same phase added the stop zones that count you down from
+        five and finish on GO, and number tags rendered at eye height so the course can be read
+        without looking down.
+      </div>
+      <div class="note spot">
+        <p><b>Where it stands:</b> the tempo detection is tuned for the walk. Trot and canter change
+        both the frequency and the depth of the movement — and a rising trot adds the rider's own
+        rhythm on top of the horse's — so those are next, on device, with the thresholds that were
+        deliberately exposed for it.</p>
       </div>
     </div>
 
     <div class="phase" data-n="6">
-      <div class="when">Phase six · customisation</div>
+      <div class="when">Phase six · customisation <i class="tag week">Week 2 · Aug 17–23</i></div>
       <h3>Moving the logic back to the server</h3>
       <p>Change Direction started as a view flag inside the Lens. That was wrong, and fixing it is
       the clearest example of the loop closing — I could see the bug on device, describe it, and
@@ -443,12 +496,13 @@ must be its own inverse, so pressing it twice returns the original course.</pre>
         <b>What came back</b>
         A server-side mirror and a thin <span class="file">ChangeDirectionButtonTyped.ts</span> that
         just sends the request. Because the server is the single source of truth, the designer's
-        screen and the rider's floor can no longer disagree.
+        screen and the rider's floor can no longer disagree — and an instructor at the laptop can
+        see the rider change the rein.
       </div>
     </div>
 
     <div class="phase" data-n="7">
-      <div class="when">Phase seven · surviving the arena</div>
+      <div class="when">Phase seven · surviving the arena <i class="tag week">Week 2 · Aug 17–23</i></div>
       <h3>Hardening the connection</h3>
       <p>Everything here exists because arena wifi is the one part of the system nobody controls. On
       a good connection none of it fires.</p>
@@ -499,12 +553,12 @@ must be its own inverse, so pressing it twice returns the original course.</pre>
         <td>Lens Studio is specific about <span class="file">.fbm</span> folders and supporting files; an example carries that detail implicitly</td>
       </tr>
       <tr>
-        <td>Gemini / Illustrator images</td>
+        <td>My obstacle reference images</td>
         <td>3D objects matching them</td>
         <td>An image is an unambiguous spec for shape, proportion and colour</td>
       </tr>
       <tr>
-        <td>Button &amp; menu textures</td>
+        <td>My button &amp; menu textures</td>
         <td>Interactive UI with pinch behaviour</td>
         <td>With the art already finished, the prompt was purely about interaction — no back-and-forth over how a button should look</td>
       </tr>
@@ -528,9 +582,15 @@ must be its own inverse, so pressing it twice returns the original course.</pre>
       the result came back usable on the first or second try.</p>
     </div>
     <div class="card win">
+      <h3>Naming the rider, not the feature</h3>
+      <p>The prompt that produced stride prediction opened with what it was <em>for</em> — seeing a
+      distance instead of hearing it called. Stating the job made the requirements underneath it
+      obvious.</p>
+    </div>
+    <div class="card win">
       <h3>Asking for Inspector inputs</h3>
       <p>Requesting that thresholds be exposed as tunable inputs, not constants, is what made the
-      step prediction adjustable on device instead of only in the editor.</p>
+      stride prediction adjustable on device instead of only in the editor.</p>
     </div>
     <div class="card win">
       <h3>Naming the invariant</h3>
@@ -553,6 +613,12 @@ must be its own inverse, so pressing it twice returns the original course.</pre>
       course has to happen where both clients can see it.</p>
     </div>
     <div class="card miss">
+      <h3>Borrowing pedestrian assumptions</h3>
+      <p>The first tempo detection was written as if the rider were walking. A horse's movement
+      through the saddle is a different frequency and a much larger amplitude, which is why the
+      thresholds had to become inputs rather than constants.</p>
+    </div>
+    <div class="card miss">
       <h3>Trusting the editor preview</h3>
       <p>Floor detection behaves differently with no real depth data. The assumed-floor fallback
       exists because of the gap between preview and device.</p>
@@ -570,9 +636,9 @@ must be its own inverse, so pressing it twice returns the original course.</pre>
       <tr><td>CLAD</td><td>Agentic development inside Lens Studio — scripts, scene wiring, asset pipeline</td></tr>
       <tr><td>Lens Studio</td><td>5.15.4 for Spectacles (2024), migrated to 5.23.2 for SPECS 27</td></tr>
       <tr><td>Path Pioneer</td><td>Reference implementation for ground-plane detection</td></tr>
-      <tr><td>Gemini</td><td>Reference imagery for obstacles; some button and menu textures</td></tr>
-      <tr><td>ChatGPT</td><td>Additional button and menu textures</td></tr>
-      <tr><td>Adobe Illustrator</td><td>Drawing and finishing the start-menu and button artwork</td></tr>
+      <tr><td>Gemini</td><td>Reference imagery for obstacles; source material for some button and menu textures</td></tr>
+      <tr><td>ChatGPT</td><td>Source material for additional button and menu textures</td></tr>
+      <tr><td>Adobe Illustrator</td><td>Drawing and finishing all start-menu and button artwork</td></tr>
       <tr><td>SQLite · Node · Fly.io</td><td>The eleven-table backend that every client reads from</td></tr>
       <tr><td>TypeScript</td><td>All nineteen Lens scripts</td></tr>
     </tbody>
@@ -580,7 +646,8 @@ must be its own inverse, so pressing it twice returns the original course.</pre>
   <div class="note">
     <p><b>On this log:</b> prompts are shown in the form that produced the result kept in the
     project. Where a request was iterated across several turns, the working version is shown rather
-    than the whole exchange.</p>
+    than the whole exchange. Phases are marked <i class="tag base">Pre-existing</i> or
+    <i class="tag week">Week 2</i> so it's clear which parts of the project predate this hackathon.</p>
   </div>
 </section>
 
