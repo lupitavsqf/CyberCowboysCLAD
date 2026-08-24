@@ -1,0 +1,96 @@
+- !<ObjectPrefab/fc52363e-c328-44ee-b799-c4d231798674>
+  PackagePath: ""
+  objects:
+    - !<own> 8b107df9-cdc9-428b-a573-7c9f062d039b
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/109c3d89-937f-49b2-ad2a-02a863578593>
+  PrefabRemaps:
+    []
+  Name: Traffic_Cone
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> d601f879-5d47-4daa-8bb2-ac3fb934985f
+  Components:
+    []
+- !<RenderMeshVisual/3f4f5a47-4d74-4bed-928c-c65ca0dc8692>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 5cefdb2a-3004-4048-ab3d-6cc3d16f3c46
+  Mesh: !<reference> b20deb2d-7ebc-4747-8bc8-4dc1ebb7ed69
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<AnimationPlayer/4c3772ed-0209-49e1-acc4-a83259c1ccb9>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  Autoplay: true
+  ClipRangeType: Frames
+  AnimationClips:
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 715eb1a8-8116-479b-9783-ad5aacff56d2
+      Name: Layer0
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0
+      End: 0
+      Offset: 0
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+- !<SceneObject/8b107df9-cdc9-428b-a573-7c9f062d039b>
+  PrefabRemaps:
+    - 109c3d89-937f-49b2-ad2a-02a863578593: 109c3d89-937f-49b2-52d5-fd579ca87a6c
+    - 3f4f5a47-4d74-4bed-928c-c65ca0dc8692: 3f4f5a47-4d74-4bed-6d73-39a35f23796d
+    - 4c3772ed-0209-49e1-acc4-a83259c1ccb9: 4c3772ed-0209-49e1-533b-57cda63e3346
+    - 8b107df9-cdc9-428b-a573-7c9f062d039b: 8b107df9-cdc9-428b-5a8c-8360f9d2fc64
+    - d601f879-5d47-4daa-8bb2-ac3fb934985f: d601f879-5d47-4daa-744d-53c046cb67a0
+  Name: cone
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 109c3d89-937f-49b2-ad2a-02a863578593
+  Components:
+    - !<own> 4c3772ed-0209-49e1-acc4-a83259c1ccb9
+- !<SceneObject/d601f879-5d47-4daa-8bb2-ac3fb934985f>
+  PrefabRemaps:
+    []
+  Name: SM_Traffic_Cones_Low
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 3f4f5a47-4d74-4bed-928c-c65ca0dc8692

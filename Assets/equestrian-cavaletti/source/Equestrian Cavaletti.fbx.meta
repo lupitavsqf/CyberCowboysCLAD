@@ -1,0 +1,189 @@
+- !<AssetImportMetadata/e2626dee-c246-400f-9271-a5b62e818ed4>
+  ImportedAssetIds:
+    .hidden/M_Cav_Pole: !<reference> da2b0b46-85f2-4982-a7bd-a97c3ce4a663
+    .hidden/white: !<reference> 22eeb063-11a8-4c2f-b988-3dd7bfee2a90
+    17f5e9fca1885259: !<reference> a09a5fda-5ac0-4734-adda-c29942b38d24
+    66780cf3a4dcb2b8: !<reference> 0371bb7b-c348-4352-832e-0b04636ebbe8
+    8b3d9ada16c55c54: !<reference> e862ad8d-00bf-4c0c-867f-476c677195b9
+    9c60cc746658fccc: !<reference> 386b5052-eb43-44e0-8976-703cc5bc4be4
+    Materials/M_Cav_Pole: !<reference> 9bc0b3c8-8664-413b-a2d3-bb1ef49cb369
+    Materials/M_Cav_Pole|M_Cav_Pole|GraphPassInfo: !<reference> 67abc689-bb43-4bed-955b-3dac5e69d08f
+    Materials/M_Oak: !<reference> a63208a6-d2c8-47da-976f-f52ccdd653f3
+    Materials/M_Oak|M_Oak|GraphPassInfo: !<reference> 466347b6-cbba-43ad-9369-3a0b90aa9fa6
+    Meshes/Pole: !<reference> 7fe9c020-6284-4346-86c6-71ac1cde13b6
+    Meshes/Support_L: !<reference> d64e630c-1bef-431a-9a08-65e86e432ca6
+    Meshes/Support_R: !<reference> 85fccaf4-1270-430c-8ba0-6c05ee5ce5c0
+    Scene: !<reference> 13e2d440-39a6-48ca-a224-414dbb8fc326
+    Textures/EQ_Cav_Oak_BaseColor: !<reference> 3a86c090-2512-4a44-ad85-5080e7b9c134
+    Textures/EQ_Cav_Oak_Normal: !<reference> c75b9747-6bd1-483c-8794-029be65731ad
+    Textures/EQ_Cav_Pole_BaseColor: !<reference> ce6251f6-c1e0-4b3c-88f9-ca9d95820af1
+    Textures/EQ_Cav_Pole_Normal: !<reference> b704cbdf-61b0-4c9b-b4c6-2ab458e94fc8
+    ac7dae9dd9cd1d08: !<reference> 4df11d0c-d4c3-47b7-84f1-90f8f38d0caf
+    c31f7085b2a5f1a0: !<reference> 800f0219-9c05-4ac9-92a3-5708e040dfc7
+    ddf91dfb2440f20a: !<reference> 153f29da-1121-4682-87b7-c0231db259df
+  ImporterName: FbxImporter
+  PrimaryAsset: !<reference> 13e2d440-39a6-48ca-a224-414dbb8fc326
+  PackageType: LegacyPackage
+  LegacyPackagePolicy: CanBeUnpackedTransparent
+  ExtraData:
+    {}
+  AssetDataMap:
+    Scene: !<own> 4690f449-a421-4d06-8a10-0150061d4122
+  DependentFiles:
+    []
+  ImporterSettings: !<FbxImporterSettings>
+    UseLegacyImporter: false
+    WithMaterials: true
+    NamingConvention: ByCategorySanitizeV2
+    PersistentIdGenerationAlgorithm: DescriptorBased
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30.000000
+    ImportVertexColor: true
+    ImportTangentsAndBinormals: true
+    RegenerateTangentsAndBinormals: false
+    RegenerateNormalsForSkinnedMeshes: true
+    ImportBlendShapeAnimation: true
+    ImportVertexAnimation: true
+    GeneratePivots: true
+    TriangulateNURBS: true
+    UseLegacyFbxLoader: false
+  CompressionSettings: !<ComplexCompressionSettings>
+    Presets:
+      None Compression: !<FileCompressionSettings>
+        {}
+      Performance Compression: !<PerformanceCompressionSettings>
+        Level: Medium
+        Mipmap: false
+    ExtensionMappings:
+      mesh: None Compression
+      png: Performance Compression
+      jpg: Performance Compression
+    Overrides:
+      {}
+- !<SceneObject/0371bb7b-c348-4352-7cd1-f4fb9c914417>
+  PrefabRemaps:
+    []
+  Name: Equestrian Cavaletti
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> e862ad8d-00bf-4c0c-7980-b893988e6a46
+    - !<own> a09a5fda-5ac0-4734-5225-3d66bd4c72db
+    - !<own> 4df11d0c-d4c3-47b7-7b0e-6f070c72f350
+  Components:
+    []
+- !<RenderMeshVisual/153f29da-1121-4682-7848-3fdce24da620>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> a63208a6-d2c8-47da-976f-f52ccdd653f3
+  Mesh: !<reference> 85fccaf4-1270-430c-8ba0-6c05ee5ce5c0
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/386b5052-eb43-44e0-7689-8fc33a43b41b>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> a63208a6-d2c8-47da-976f-f52ccdd653f3
+  Mesh: !<reference> d64e630c-1bef-431a-9a08-65e86e432ca6
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ObjectPrefabAssetData/4690f449-a421-4d06-8a10-0150061d4122>
+  Prototype: !<ObjectOwner/746c0c3c-7c68-41d4-8d86-be0802e6632f>
+    PackagePath: ""
+    objects:
+      - !<own> 0371bb7b-c348-4352-7cd1-f4fb9c914417
+- !<SceneObject/4df11d0c-d4c3-47b7-7b0e-6f070c72f350>
+  PrefabRemaps:
+    []
+  Name: Support_R
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: -90.000000, y: -0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 153f29da-1121-4682-7848-3fdce24da620
+- !<RenderMeshVisual/800f0219-9c05-4ac9-6d5c-a8f71fbf2038>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 9bc0b3c8-8664-413b-a2d3-bb1ef49cb369
+  Mesh: !<reference> 7fe9c020-6284-4346-86c6-71ac1cde13b6
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/a09a5fda-5ac0-4734-5225-3d66bd4c72db>
+  PrefabRemaps:
+    []
+  Name: Support_L
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: -90.000000, y: -0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 386b5052-eb43-44e0-7689-8fc33a43b41b
+- !<SceneObject/e862ad8d-00bf-4c0c-7980-b893988e6a46>
+  PrefabRemaps:
+    []
+  Name: Pole
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 25.452312, z: 0.000000}
+    Rotation: {x: -90.000000, y: -0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 800f0219-9c05-4ac9-6d5c-a8f71fbf2038

@@ -1,0 +1,46 @@
+- !<AssetImportMetadata/2803a5da-6817-42ac-97e2-62e4428bee93>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 597ede07-6ef2-4dae-889a-d22254038bef
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 597ede07-6ef2-4dae-889a-d22254038bef
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 4c831c1e-59f9-42e7-ad54-e354277939e4
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/4c831c1e-59f9-42e7-ad54-e354277939e4>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 1adcba96-4606-4c70-9369-e6ef7eb2066c
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    webView: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - webView: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input AssignableType_1 webView {"hint":"The WebView to reload when this button is pinched."}'

@@ -1,0 +1,74 @@
+- !<AssetImportMetadata/17252cbe-3860-47fb-a399-f6361ba48236>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> d909b5a2-1c6a-44e1-ac44-49bef8508e2a
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> d909b5a2-1c6a-44e1-ac44-49bef8508e2a
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    AssetLibraryId: 3kQqaLSKYvA1iY30Jz9FZW
+  AssetDataMap:
+    TypeScriptAsset: !<own> 78cd0c3c-7a8d-413f-922b-9ba93be0f5e1
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/78cd0c3c-7a8d-413f-922b-9ba93be0f5e1>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: |-
+    Allows do detect surface using WorldQueryModule
+    
+    API: 
+    startGroundCalibration(callback: (pos: vec3, rot: quat) => void)
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: e5722f0e-50c4-492d-a1fd-b5e7322b2e1a
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    animation: false
+    arenaRoot: false
+    assumedCameraHeightCm: false
+    autoStart: false
+    camObj: false
+    enableLogging: false
+    enableLoggingLifecycle: false
+    recenterToHit: false
+    visualObj: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - camObj: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      visualObj: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      animation: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      arenaRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      autoStart: true
+      assumedCameraHeightCm: !<float> 110.000000
+      recenterToHit: false
+      enableLogging: false
+      enableLoggingLifecycle: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input SceneObject camObj {"hint":"Camera scene object whose forward direction defines the hit-test ray"}'
+    - '// @input SceneObject visualObj {"hint":"Scene object moved to the detected surface position during calibration (the ring)"}'
+    - '// @input AssignableType_1 animation {"hint":"CircleAnimation driving the calibration ring visual"}'
+    - '// @input SceneObject arenaRoot {"hint":"Your ArenaRoot — dropped onto the detected floor when calibration completes."}'
+    - '// @input bool autoStart = true {"hint":"Start floor calibration automatically when the lens starts."}'
+    - '// @input float assumedCameraHeightCm = 110 {"hint":"Assumed eye-to-floor height (cm), applied instantly so the arena sits on the floor even before/without a real scan (e.g. in the editor)."}'
+    - "// @input bool recenterToHit {\"hint\":\"ON: move the arena to where you looked. OFF: keep the arena's X/Z and only drop it to floor height.\"}"
+    - '// @input bool enableLogging {"hint":"Enable general logging"}'
+    - '// @input bool enableLoggingLifecycle {"hint":"Enable lifecycle logging (onAwake, onStart, onUpdate, onDestroy)"}'

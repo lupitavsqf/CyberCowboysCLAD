@@ -1,0 +1,49 @@
+- !<AssetImportMetadata/df45ebcd-9693-4141-84bf-c9bc05c6f39f>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 36579624-5345-4a3b-965c-9279bcb02237
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 36579624-5345-4a3b-965c-9279bcb02237
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> ebc2795b-35cf-492d-8e59-cba4566960ab
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/ebc2795b-35cf-492d-8e59-cba4566960ab>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 02bddc06-bbb3-4ceb-a027-8f422d1250c9
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    arenaStreamer: false
+    pinchButton: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - pinchButton: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      arenaStreamer: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input AssignableType_1 pinchButton
+    - // @input AssignableType_2 arenaStreamer

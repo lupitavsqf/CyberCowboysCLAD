@@ -1,0 +1,52 @@
+- !<AssetImportMetadata/c84e7f3b-46c3-4a0c-9e07-3006adc702af>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 16098748-c213-4d8e-af5c-9552a0375521
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 16098748-c213-4d8e-af5c-9552a0375521
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> d240e991-c60e-4877-b2d9-be3b5944b0b3
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/d240e991-c60e-4877-b2d9-be3b5944b0b3>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 4d20ba38-46df-4cfe-9a5a-141abcecddf5
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    arenaStreamer: false
+    draftLabel: false
+    editButton: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - arenaStreamer: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      editButton: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      draftLabel: !<reference.Text> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input AssignableType_1 arenaStreamer
+    - // @input AssignableType_2 editButton
+    - "// @input Component.Text draftLabel {\"hint\":\"OPTIONAL: a Text (Zilla Slab) that previews the code as you type. If empty, the keyboard's built-in preview is used.\"}"

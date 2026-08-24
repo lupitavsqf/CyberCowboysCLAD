@@ -1,0 +1,279 @@
+- !<AssetImportMetadata/1db9404f-6e4a-4ba1-8484-aa782aad0118>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> cadf6a47-4e57-4515-99ee-77d8678a4688
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> cadf6a47-4e57-4515-99ee-77d8678a4688
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 5ddc41a1-c141-478d-b91c-e8a1e75cf32a
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/5ddc41a1-c141-478d-b91c-e8a1e75cf32a>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 8393b51d-ce5b-44b8-a404-78412baacd77
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    alertAudio: false
+    arenaIdLabel: false
+    arenaRoot: false
+    arenaScale: false
+    autoStartArenaOnConnect: false
+    barrelPrefab: false
+    camera: false
+    cavalettiPrefab: false
+    conePrefab: false
+    connectTimeoutSeconds: false
+    connectionLabel: false
+    defaultObstaclePrefab: false
+    enableLogging: false
+    finishLinePrefab: false
+    flipHandedness: false
+    groundOffsetCm: false
+    internetModule: false
+    logTypes: false
+    numberTagFaceCamera: false
+    numberTagFloatAmplitudeMeters: false
+    numberTagFloatSpeed: false
+    numberTagFont: false
+    numberTagHeightMeters: false
+    numberTagScale: false
+    numberTagYawOffsetDeg: false
+    obstacleBaseScale: false
+    obstacleYawOffsetDeg: false
+    pathColorNames: false
+    pathColorPrefabs: false
+    pathRibbonEnabled: false
+    pathRibbonHidesDots: false
+    pathRibbonLiftCm: false
+    pathRibbonMaterial: false
+    pathRibbonWidthMeters: false
+    pathScaleFollowsArena: false
+    pathTriangleGreenPrefab: false
+    pathTrianglePrefab: false
+    pathTriangleRedPrefab: false
+    pathTriangleYellowPrefab: false
+    pauseZonePrefab: false
+    polePrefab: false
+    proximityRadiusMeters: false
+    reconnectBaseSeconds: false
+    reconnectMaxSeconds: false
+    snapshotCoalesceSeconds: false
+    startFinishLineExtraScale: false
+    startLinePrefab: false
+    stepBobThresholdCm: false
+    stepCadenceSeconds: false
+    stepMarkerFourthPrefab: false
+    stepMarkerPrefab: false
+    stepMarkerSecondPrefab: false
+    stepMarkerSizeMeters: false
+    stepMarkerThirdPrefab: false
+    stepMarkerYawOffsetDeg: false
+    stepMinSpeedMps: false
+    stepVelocitySmoothingSeconds: false
+    stopCompleteAudio: false
+    stopGoText: false
+    stopHoldSeconds: false
+    stopLabelFlipForward: false
+    stopLabelFollowSmoothing: false
+    stopLabelFont: false
+    stopLabelHeightMeters: false
+    stopLabelScale: false
+    stopLabelText: false
+    stopLabelWearerOffsetMeters: false
+    stopTriggerRadiusMeters: false
+    targetSession: false
+    triangleSizeMeters: false
+    triangleYawOffsetDeg: false
+    verticalPrefab: false
+    wearerDotFaceHeading: false
+    wearerDotPrefab: false
+    wearerDotSizeMeters: false
+    wearerDotSmoothing: false
+    wearerDotYawOffsetDeg: false
+    websocketUrl: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - internetModule: !<reference.InternetModule> 00000000-0000-0000-0000-000000000000
+      websocketUrl: "wss://cybercowboys-back.fly.dev/"
+      arenaRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      camera: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      conePrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      polePrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      barrelPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      verticalPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      cavalettiPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      pauseZonePrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      startLinePrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      finishLinePrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      defaultObstaclePrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      startFinishLineExtraScale: !<float> 10.000000
+      pathTrianglePrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      pathTriangleGreenPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      pathTriangleYellowPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      pathTriangleRedPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      pathColorNames: !<string[]>
+        []
+      pathColorPrefabs: !<reference.ObjectPrefab[]>
+        []
+      pathRibbonEnabled: true
+      pathRibbonHidesDots: true
+      pathRibbonWidthMeters: 0.400000
+      pathRibbonLiftCm: 0.500000
+      pathRibbonMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      pathScaleFollowsArena: true
+      numberTagFont: !<reference.Font> 00000000-0000-0000-0000-000000000000
+      numberTagHeightMeters: 1.500000
+      numberTagScale: !<float> 1.000000
+      numberTagFaceCamera: true
+      numberTagYawOffsetDeg: !<float> 0.000000
+      numberTagFloatAmplitudeMeters: 0.150000
+      numberTagFloatSpeed: 0.600000
+      stopLabelFont: !<reference.Font> 00000000-0000-0000-0000-000000000000
+      stopLabelHeightMeters: 1.500000
+      stopLabelScale: !<float> 1.000000
+      stopLabelText: STOP
+      stopGoText: GO
+      stopHoldSeconds: !<float> 5.000000
+      stopTriggerRadiusMeters: 0.750000
+      stopLabelWearerOffsetMeters: 1.200000
+      stopLabelFollowSmoothing: 0.250000
+      stopLabelFlipForward: false
+      stopCompleteAudio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      wearerDotPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      wearerDotSizeMeters: 0.750000
+      wearerDotFaceHeading: true
+      wearerDotYawOffsetDeg: !<float> 0.000000
+      wearerDotSmoothing: 0.100000
+      stepMarkerPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      stepMarkerSecondPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      stepMarkerThirdPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      stepMarkerFourthPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      stepMarkerSizeMeters: 0.400000
+      stepMinSpeedMps: 0.400000
+      stepBobThresholdCm: 0.500000
+      stepCadenceSeconds: 0.550000
+      stepVelocitySmoothingSeconds: 0.300000
+      stepMarkerYawOffsetDeg: !<float> 0.000000
+      targetSession: !<float> 0.000000
+      arenaScale: !<float> 1.000000
+      obstacleBaseScale: !<float> 1.000000
+      triangleSizeMeters: 0.750000
+      groundOffsetCm: 0.800000
+      flipHandedness: false
+      triangleYawOffsetDeg: !<float> 0.000000
+      obstacleYawOffsetDeg: !<float> 0.000000
+      enableLogging: true
+      logTypes: true
+      snapshotCoalesceSeconds: 0.350000
+      reconnectBaseSeconds: 1.500000
+      reconnectMaxSeconds: !<float> 30.000000
+      connectTimeoutSeconds: !<float> 12.000000
+      connectionLabel: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      alertAudio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      proximityRadiusMeters: 1.500000
+      autoStartArenaOnConnect: true
+      arenaIdLabel: !<reference.Text> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Asset.InternetModule internetModule
+    - '// @input string websocketUrl = "wss://cybercowboys-back.fly.dev/"'
+    - // @input SceneObject arenaRoot
+    - // @input SceneObject camera
+    - // @input Asset.ObjectPrefab conePrefab
+    - // @input Asset.ObjectPrefab polePrefab
+    - // @input Asset.ObjectPrefab barrelPrefab
+    - // @input Asset.ObjectPrefab verticalPrefab
+    - // @input Asset.ObjectPrefab cavalettiPrefab
+    - // @input Asset.ObjectPrefab pauseZonePrefab
+    - '// @input Asset.ObjectPrefab startLinePrefab {"hint":"FBX prefab for the START line. Import startline.fbx, make a prefab, drag it here. Placed on the floor like any obstacle."}'
+    - '// @input Asset.ObjectPrefab finishLinePrefab {"hint":"FBX prefab for the FINISH line. Import finishline.fbx, make a prefab, drag it here. Placed on the floor like any obstacle."}'
+    - // @input Asset.ObjectPrefab defaultObstaclePrefab
+    - '// @input float startFinishLineExtraScale = 10 {"hint":"Extra size multiplier applied ONLY to the start/finish line prefabs, on top of their own baked-in scale and obstacleBaseScale/arenaScale. Bump this up if the lines still look too small."}'
+    - "// @input Asset.ObjectPrefab pathTrianglePrefab {\"hint\":\"Prefab for BLUE path points (Paths.color = 'blue'). Also the FALLBACK for any colour with no prefab of its own.\"}"
+    - "// @input Asset.ObjectPrefab pathTriangleGreenPrefab {\"hint\":\"Prefab for GREEN path points (Paths.color = 'green'). Must be its OWN prefab with a green material — not a renamed copy of the blue one.\"}"
+    - "// @input Asset.ObjectPrefab pathTriangleYellowPrefab {\"hint\":\"Prefab for YELLOW path points (Paths.color = 'yellow'). Must be its OWN prefab with a yellow material — not a renamed copy of the blue one.\"}"
+    - "// @input Asset.ObjectPrefab pathTriangleRedPrefab {\"hint\":\"Prefab for RED path points (Paths.color = 'red'). Must be its OWN prefab with a red material — not a renamed copy of the blue one.\"}"
+    - '// @input string[] pathColorNames = {} {"hint":"Extra Paths.color values from the DB, e.g. purple, orange. Case-insensitive. Leave empty unless the website has gained new swatches."}'
+    - '// @input Asset.ObjectPrefab[] pathColorPrefabs = {} {"hint":"Prefabs matching pathColorNames 1:1 — same order, same length."}'
+    - '// @input bool pathRibbonEnabled = true {"hint":"Draw the course as one continuous 3D strip along the floor instead of a line of separate dots."}'
+    - '// @input bool pathRibbonHidesDots = true {"hint":"With the ribbon on, skip the dot prefabs entirely — the ribbon REPLACES them. Turn this off to draw the dots on top of the ribbon as well."}'
+    - '// @input float pathRibbonWidthMeters = 0.4 {"hint":"How wide the strip is, in arena-metres. Rides arenaScale like every other length here, so it stays in proportion when the course is scaled."}'
+    - '// @input float pathRibbonLiftCm = 0.5 {"hint":"How far the strip floats above the floor, in cm, ON TOP of groundOffsetCm. A few millimetres is enough to stop it fighting with the floor for the same depth and flickering."}'
+    - "// @input Asset.Material pathRibbonMaterial {\"hint\":\"OPTIONAL. Leave EMPTY and the ribbon clones each colour's PathDot material, so it always matches the dots. Assign a material here to use your own instead — it gets tinted per path colour.\"}"
+    - '// @input bool pathScaleFollowsArena = true {"hint":"Scale the path dots with the arena when you resize it in calibration. The Paths table has no scale column of its own, so the factor is read off the obstacles in the same session. Turn OFF to keep dots a fixed size regardless of calibration."}'
+    - '// @input Asset.Font numberTagFont {"hint":"Zilla Slab font asset. Import ZillaSlab-Bold.ttf into Assets, then drag the Font asset here."}'
+    - '// @input float numberTagHeightMeters = 1.5 {"hint":"How high the number floats off the floor, in arena-metres. ~1.5 ≈ eye / sight level at full arenaScale. NUMBER_TAG_EXTRA_LIFT_M is added on top of this."}'
+    - '// @input float numberTagScale = 1 {"hint":"Overall size multiplier for the floating number. Increase if the digits read too small. NUMBER_TAG_EXTRA_SCALE multiplies this again."}'
+    - '// @input bool numberTagFaceCamera = true {"hint":"Keep each number turned toward the wearer (yaw only, stays upright). Off = the number faces into the arena."}'
+    - '// @input float numberTagYawOffsetDeg {"hint":"Spin the number by this many degrees if it ends up facing away from you (try 180)."}'
+    - '// @input float numberTagFloatAmplitudeMeters = 0.15 {"hint":"How far the number bobs up and down, in arena-metres, from its resting height. 0 = no float."}'
+    - '// @input float numberTagFloatSpeed = 0.6 {"hint":"How fast the number bobs up and down, in cycles per second."}'
+    - '// @input Asset.Font stopLabelFont {"hint":"Font for the floating STOP / countdown label. Normally the same Zilla Slab font as the number tags — leave empty to reuse numberTagFont."}'
+    - '// @input float stopLabelHeightMeters = 1.5 {"hint":"How high the STOP label floats off the floor, in arena-metres. Match numberTagHeightMeters to keep it at the same eye level as the numbers."}'
+    - '// @input float stopLabelScale = 1 {"hint":"Overall size multiplier for the STOP / countdown label."}'
+    - '// @input string stopLabelText = "STOP" {"hint":"What the label reads before the wearer steps on the sign."}'
+    - '// @input string stopGoText = "GO" {"hint":"What the label reads once the hold is complete."}'
+    - '// @input float stopHoldSeconds = 5 {"hint":"How many seconds the wearer must stand on the sign. The label counts this down, one number per second."}'
+    - "// @input float stopTriggerRadiusMeters = 0.75 {\"hint\":\"How close to the middle of the stop sign the wearer's head must be to count as standing on it, in arena-metres. Roughly the radius of the decal.\"}"
+    - "// @input float stopLabelWearerOffsetMeters = 1.2 {\"hint\":\"Once the wearer is standing on the sign the label slides this far out in front of them, in arena-metres, so the countdown isn't sitting on their nose. It returns over the sign when they step off. 0 = always stay over the sign.\"}"
+    - '// @input float stopLabelFollowSmoothing = 0.25 {"hint":"How long the label takes to slide between the sign and in front of the wearer, in seconds. ~0.25 glides; 0 = snap instantly."}'
+    - '// @input bool stopLabelFlipForward {"hint":"Tick ONLY if the countdown appears behind you instead of in front. Flips which way the label is pushed out."}'
+    - '// @input Component.AudioComponent stopCompleteAudio {"hint":"AudioComponent played when the wearer completes the full stop — wire it to CalibrationComplete.mp3, the same chime as finishing calibration."}'
+    - '// @input Asset.ObjectPrefab wearerDotPrefab {"hint":"Prefab for the dot that follows the wearer around, drawn on the floor under their feet. Any of the PathDot prefabs works, or give it its own cowboy marker so it reads apart from the path. Leave EMPTY to turn the follower off."}'
+    - "// @input float wearerDotSizeMeters = 0.75 {\"hint\":\"Size of the wearer's dot at 100%, in arena-metres. Matches triangleSizeMeters by default so it sits alongside the path dots.\"}"
+    - '// @input bool wearerDotFaceHeading = true {"hint":"Turn the dot to point where the wearer is facing. Pointless for a round dot; matters if the prefab is an arrow or a cowboy that has a front."}'
+    - "// @input float wearerDotYawOffsetDeg {\"hint\":\"Spin the wearer's dot by this many degrees if it ends up pointing the wrong way (try 180).\"}"
+    - "// @input float wearerDotSmoothing = 0.1 {\"hint\":\"Smoothing in seconds for the dot's slide. Head tracking sways even when you stand still, and a dot copying that exactly looks nervous. ~0.1 settles it without feeling laggy; 0 = glued exactly under the head.\"}"
+    - "// @input Asset.ObjectPrefab stepMarkerPrefab {\"hint\":\"Marker dropped where the NEXT footfall is predicted to land. Leave EMPTY to reuse wearerDotPrefab, so one prefab covers the wearer's dot and all four step markers. Step prediction is off only if BOTH this and wearerDotPrefab are empty.\"}"
+    - "// @input Asset.ObjectPrefab stepMarkerSecondPrefab {\"hint\":\"Marker for the 2nd step ahead. Empty = reuse the 1st marker's prefab.\"}"
+    - "// @input Asset.ObjectPrefab stepMarkerThirdPrefab {\"hint\":\"Marker for the 3rd step ahead. Empty = reuse the 1st marker's prefab. Colouring the four differently (e.g. green/yellow/orange/red) reads as how far ahead each guess is — and how much less each is worth trusting.\"}"
+    - "// @input Asset.ObjectPrefab stepMarkerFourthPrefab {\"hint\":\"Marker for the 4th step ahead. Empty = reuse the 1st marker's prefab. This one lands about two seconds out, so it swings wide whenever the wearer turns.\"}"
+    - '// @input float stepMarkerSizeMeters = 0.4 {"hint":"Size of the step markers at 100%, in arena-metres."}'
+    - '// @input float stepMinSpeedMps = 0.4 {"hint":"Hide the markers below this speed, in real m/s. Standing still there is no stride to extrapolate, so the prediction would just pile up under the wearer. ~0.4 keeps them for walking only."}'
+    - "// @input float stepBobThresholdCm = 0.5 {\"hint\":\"How deep a dip must be, from the head's high point down to its low point, to count as a footfall — in centimetres. Walking bobs the head roughly 1-2cm each step. Raise this if markers fire while standing, lower it if slow walking is missed.\"}"
+    - '// @input float stepCadenceSeconds = 0.55 {"hint":"Seconds per step to assume until enough footfalls have been timed to measure the real cadence. ~0.55 is an ordinary walking pace."}'
+    - "// @input float stepVelocitySmoothingSeconds = 0.3 {\"hint\":\"Smoothing in seconds on the wearer's velocity. Higher = steadier markers but slower to swing round when they turn.\"}"
+    - '// @input float stepMarkerYawOffsetDeg {"hint":"Spin the step markers by this many degrees if they point the wrong way (try 180)."}'
+    - // @input float targetSession
+    - // @input float arenaScale = 1
+    - // @input float obstacleBaseScale = 1
+    - // @input float triangleSizeMeters = 0.75
+    - // @input float groundOffsetCm = 0.8
+    - // @input bool flipHandedness
+    - // @input float triangleYawOffsetDeg
+    - // @input float obstacleYawOffsetDeg
+    - // @input bool enableLogging = true
+    - // @input bool logTypes = true
+    - '// @input float snapshotCoalesceSeconds = 0.35 {"hint":"Wait this long before actually asking the server for fresh tables, so a burst of triggers (open, start, retrieve, reload) becomes ONE pull instead of four. 0.25-0.5 is right; 0 restores the old behaviour."}'
+    - "// @input float reconnectBaseSeconds = 1.5 {\"hint\":\"First reconnect wait, in seconds. Each further failure doubles it (with jitter) up to the maximum below, so a server that is down doesn't get hammered every 3s by every pair of glasses in the room.\"}"
+    - '// @input float reconnectMaxSeconds = 30 {"hint":"Longest the reconnect wait is allowed to grow to, in seconds."}'
+    - "// @input float connectTimeoutSeconds = 12 {\"hint\":\"Give up on a connection attempt that hasn't opened after this many seconds and start a fresh one. On a slow network a socket can sit half-open forever; without this the Lens waits with it.\"}"
+    - "// @input Component.Text connectionLabel {\"hint\":\"OPTIONAL screen-space Text showing the link state (CONNECTING / LIVE / OFFLINE). Worth wiring: on a slow network the difference between 'still loading' and 'broken' is the whole of the user's experience.\"}"
+    - // @input Component.AudioComponent alertAudio
+    - // @input float proximityRadiusMeters = 1.5
+    - '// @input bool autoStartArenaOnConnect = true {"hint":"Generate a new arena automatically the first time the glasses connect, so the arena code fills in without needing a Start button wired. Turn off to drive it only from the Start button."}'
+    - '// @input Component.Text arenaIdLabel {"hint":"Screen-space Text (top-right corner) that shows the active arena_id, dashed for the wearer, e.g. 0000-1000. Use the Zilla Slab font. The Edit button (ArenaIdEditorTyped) changes which arena_id this points at."}'

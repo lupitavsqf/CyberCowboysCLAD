@@ -1,0 +1,98 @@
+- !<AssetImportMetadata/bc2a30d0-cf3b-4b36-b154-42dd90f4eb1b>
+  ImportedAssetIds:
+    .hidden/M_Barrel: !<reference> 4c2e388a-3a4f-4ef8-a6b5-acfc8d92d4be
+    .hidden/white: !<reference> 919ccd42-d880-46ac-9e29-680b006d1530
+    3311d33af95d85aa: !<reference> ea871541-69c8-41a4-bc4e-cf8db692270a
+    66780cf3a4dcb2b8: !<reference> b7fa4897-d9d5-47a7-8199-2126ae7738dc
+    Materials/M_Barrel: !<reference> 88ab5ce0-19d3-458a-9666-6c80db962e44
+    Materials/M_Barrel|M_Barrel|GraphPassInfo: !<reference> 157eb052-2e82-4c25-b11e-8df672809018
+    Meshes/Barrel: !<reference> b60fded9-8a6e-4bc9-9eb8-b78173d00d4a
+    Scene: !<reference> fb476674-e1da-40c4-a603-4c02b546eaa8
+    Textures/M_Barrel_BaseColor: !<reference> f3559d61-da6a-47ef-b9f9-61e54db4b1da
+    Textures/M_Barrel_Normal: !<reference> f55a7f4d-bcce-4ae4-b483-0297a6fb66a7
+    d3077b1e01f6f7df: !<reference> 3cb58655-861b-447e-ac7e-a9542ac0e8e1
+  ImporterName: ObjImporter
+  PrimaryAsset: !<reference> fb476674-e1da-40c4-a603-4c02b546eaa8
+  PackageType: LegacyPackage
+  LegacyPackagePolicy: CanBeUnpackedTransparent
+  ExtraData:
+    {}
+  AssetDataMap:
+    Scene: !<own> b80d34f5-418e-446c-a699-ffc3721f5eaf
+  DependentFiles:
+    - M_Barrel_BaseColor.png
+    - M_Barrel_Normal.png
+    - barrel.mtl
+  ImporterSettings: !<D3FileImporterSettingsBase>
+    UseLegacyImporter: false
+    WithMaterials: true
+    NamingConvention: ByCategorySanitizeV2
+    PersistentIdGenerationAlgorithm: DescriptorBased
+  CompressionSettings: !<ComplexCompressionSettings>
+    Presets:
+      Performance Compression: !<PerformanceCompressionSettings>
+        Level: Medium
+        Mipmap: false
+      None Compression: !<FileCompressionSettings>
+        {}
+    ExtensionMappings:
+      png: Performance Compression
+      jpg: Performance Compression
+      mesh: None Compression
+    Overrides:
+      {}
+- !<RenderMeshVisual/3cb58655-861b-447e-5381-56abd53f171e>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 88ab5ce0-19d3-458a-9666-6c80db962e44
+  Mesh: !<reference> b60fded9-8a6e-4bc9-9eb8-b78173d00d4a
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/b7fa4897-d9d5-47a7-7e66-ded95188c723>
+  PrefabRemaps:
+    []
+  Name: barrel
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> ea871541-69c8-41a4-43b1-3072496dd8f5
+  Components:
+    []
+- !<ObjectPrefabAssetData/b80d34f5-418e-446c-a699-ffc3721f5eaf>
+  Prototype: !<ObjectOwner/b6149a0f-5e51-41f4-8ba8-21270204ad91>
+    PackagePath: ""
+    objects:
+      - !<own> b7fa4897-d9d5-47a7-7e66-ded95188c723
+- !<SceneObject/ea871541-69c8-41a4-43b1-3072496dd8f5>
+  PrefabRemaps:
+    []
+  Name: Barrel
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 3cb58655-861b-447e-5381-56abd53f171e

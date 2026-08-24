@@ -1,0 +1,71 @@
+- !<AssetImportMetadata/e2cd29d9-be44-41bd-8635-5b7c6ec2c16d>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> fd9f64b8-4cfe-4d4f-afcc-8925daa1b667
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> fd9f64b8-4cfe-4d4f-afcc-8925daa1b667
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 48dcbfa5-ec05-4d27-a3e5-1d00b58509a3
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/48dcbfa5-ec05-4d27-a3e5-1d00b58509a3>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 250302a1-1b92-4c7f-958e-a10791035363
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    arenaIdLabel: false
+    arenaStreamer: false
+    bottomLabel: false
+    closeButton: false
+    closeOnButtons: false
+    image: false
+    panelRoot: false
+    placeholder: false
+    topLabel: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - panelRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      closeButton: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      topLabel: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      image: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      bottomLabel: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      arenaIdLabel: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      placeholder: "--------"
+      closeOnButtons: !<MappingBased.AssignableType_2[]>
+        []
+      arenaStreamer: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input SceneObject panelRoot {"hint":"calibratepanel — the panel background. Hidden until a button opens it."}'
+    - "// @input AssignableType_1 closeButton {\"hint\":\"The close button's PinchButton, sitting on the panel.\"}"
+    - '// @input Component.Text topLabel {"hint":"The Text ABOVE the image. Each button supplies its own words."}'
+    - '// @input Component.Image image {"hint":"The Image component in the middle of the panel. Each button supplies its own picture."}'
+    - '// @input Component.Text bottomLabel {"hint":"The Text BELOW the image. Each button supplies its own words."}'
+    - '// @input Component.Text arenaIdLabel {"hint":"The arena id Text (a copy of ArenaIdLabel). Shown the same for every button."}'
+    - '// @input string placeholder = "--------" {"hint":"Shown while no arena is being tracked yet."}'
+    - '// @input AssignableType_2[] closeOnButtons {"hint":"Buttons that CLOSE this panel (ChooseLessonButton, homebutton). NOT the buttons that open it."}'
+    - '// @input AssignableType_3 arenaStreamer {"hint":"GameRoot/ArenaRoot — the ArenaStreamerTyped that knows the current arena."}'

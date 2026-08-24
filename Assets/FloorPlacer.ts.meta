@@ -1,0 +1,85 @@
+- !<AssetImportMetadata/41b25959-c28c-4e2f-83c7-cc8f9da30557>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> a55be1a8-a25f-4259-afcb-4c04a5ff2284
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> a55be1a8-a25f-4259-afcb-4c04a5ff2284
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> b4a20741-9672-40a3-baaa-4d9f4555be69
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/b4a20741-9672-40a3-baaa-4d9f4555be69>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: fb3d4f1c-13a0-4726-be32-9a6afaf75527
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    arenaRoot: false
+    assumedCameraHeightCm: false
+    autoDetectFloor: false
+    camera: false
+    continuousTracking: false
+    driftThresholdCm: false
+    enableLogging: false
+    groundOnly: false
+    matchFloorHeightOnly: false
+    maxFloorDistanceCm: false
+    placeInFrontCm: false
+    reticle: false
+    samplesToLock: false
+    stabilityToleranceCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - arenaRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      camera: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      reticle: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      autoDetectFloor: true
+      assumedCameraHeightCm: !<float> 110.000000
+      groundOnly: true
+      matchFloorHeightOnly: false
+      maxFloorDistanceCm: !<float> 400.000000
+      samplesToLock: !<float> 10.000000
+      stabilityToleranceCm: !<float> 6.000000
+      continuousTracking: false
+      driftThresholdCm: !<float> 25.000000
+      placeInFrontCm: !<float> 0.000000
+      enableLogging: true
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input SceneObject arenaRoot {"hint":"The object to pin to the floor — your ArenaRoot."}'
+    - "// @input SceneObject camera {\"hint\":\"The device Camera object (the wearer's head). Required: gaze + height come from this.\"}"
+    - "// @input SceneObject reticle {\"hint\":\"Optional marker shown at the floor spot you're aiming at while it calibrates.\"}"
+    - '// @input bool autoDetectFloor = true {"hint":"ON (recommended): assume a floor below you instantly, then refine to the real floor by looking at it. OFF: classic aim-and-pinch placement."}'
+    - '// @input float assumedCameraHeightCm = 110 {"hint":"Assumed distance from your eyes down to the floor, in cm. Used instantly and as the editor/fallback floor (~100–120 for a standing adult)."}'
+    - '// @input bool groundOnly = true {"hint":"Only lock onto HORIZONTAL surfaces (real floor), ignoring walls/tilted surfaces."}'
+    - '// @input bool matchFloorHeightOnly {"hint":"MANUAL mode only. ON: keep the arena X/Z and just drop it to floor height. OFF: move the whole arena to where you pinch."}'
+    - '// @input float maxFloorDistanceCm = 1000 {"hint":"AUTO: how far along your gaze to search for the floor, in cm. 1000 = up to 10 m."}'
+    - '// @input float samplesToLock = 15 {"hint":"AUTO: how many steady floor hits in a row before locking. ~10–30. Higher = steadier but slower."}'
+    - "// @input float stabilityToleranceCm = 6 {\"hint\":\"AUTO: the floor hit must stay within this many cm to count as 'steady'.\"}"
+    - '// @input bool continuousTracking {"hint":"AUTO: keep watching after locking and re-level if the floor drifts beyond the threshold below. OFF = lock once and stay put."}'
+    - '// @input float driftThresholdCm = 30 {"hint":"AUTO + continuousTracking: re-level only if the floor moves more than this many cm from the locked height."}'
+    - '// @input float placeInFrontCm {"hint":"AUTO: on the first real lock, also slide the arena this many cm in front of you. 0 = leave X/Z where it is."}'
+    - // @input bool enableLogging = true

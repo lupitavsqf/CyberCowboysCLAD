@@ -1,0 +1,52 @@
+UV FIX - mirrored text (updated)
+================================
+
+Fix #1 (previous)
+-----------------
+Banner and GroundDecal are double-sided: every quad is duplicated with
+reversed winding, and both copies referenced the SAME UV indices, so the
+back-facing copy showed the texture mirrored. The back-facing duplicates
+were given horizontally mirrored UVs (u -> 1-u). That fixed the Banner.
+
+Fix #2 (this update) - GroundDecal
+----------------------------------
+The ground strip was still mirrored on BOTH sides, so fix #1 only made the
+two faces consistently wrong. The cause was the V axis, not U: the decal
+lies in the XZ plane, and its UVs ran with v increasing toward +Z. For an
+up-facing quad that gives a UV frame with the opposite handedness to the
+face normal, i.e. a reflected texture. Depending on where you orbit the
+camera it reads as a left-right flip or an upside-down flip - both are the
+same reflection seen from different sides.
+
+Both GroundDecal quads now use v -> 1-v (v increases toward -Z), with
+dedicated vt entries instead of reusing indices from the poles:
+
+  f 274/282 275/283 276/284 277/285   <- down-facing (-Y)
+  f 277/281 276/280 275/279 274/278   <- up-facing (+Y)
+
+Verification: for every face, cross(dP/du, dP/dv) . N > 0 now holds on the
+Banner and on both GroundDecal quads. The text on the ground now reads in
+the same direction as the text on the banner, i.e. correctly for a viewer
+standing on the +Z side of the gate.
+
+The PNG textures were never the problem; they are correct as authored.
+Only the .obj files changed.
+
+Reading direction
+-----------------
+If you want the ground text to read from the OTHER side of the gate (-Z),
+swap the two u values instead: use u -> 1-u on both quads as well. That
+rotates the decal 180 degrees without reintroducing the mirror.
+
+Poles
+-----
+Some pole faces also have mirrored UVs, but they sample a thin featureless
+strip at the bottom of the texture (v = 0.00-0.05), so there is nothing
+readable to flip. Left untouched.
+
+If it still looks mirrored
+--------------------------
+Some importers convert right-handed OBJ to a left-handed engine space by
+negating the X axis, which mirrors everything. The gate is now internally
+consistent, so if BOTH the banner and the ground read backwards after
+import, flip the BaseColor PNG horizontally once and both will be correct.

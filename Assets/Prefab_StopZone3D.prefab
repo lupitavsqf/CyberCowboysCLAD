@@ -1,0 +1,58 @@
+- !<ObjectPrefab/e9c6b013-1c94-44c7-ae16-102937a0dd46>
+  PackagePath: ""
+  objects:
+    - !<own> e9e33cbb-6fa9-4d1e-b96f-b927af117449
+  LazyLoading: false
+  RetainAssets: true
+- !<RenderMeshVisual/02e6efbf-ff1e-4bab-8c75-1c74fde625a4>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> be82f18d-d8a4-4a35-be9b-4a11fe47322e
+  Mesh: !<reference> 37a91b16-bbf6-4c00-aebc-25f53155f0c0
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/48c7ece1-7621-487c-aecd-f6e78cf0f7a5>
+  PrefabRemaps:
+    []
+  Name: StopSign
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 02e6efbf-ff1e-4bab-8c75-1c74fde625a4
+- !<SceneObject/e9e33cbb-6fa9-4d1e-b96f-b927af117449>
+  PrefabRemaps:
+    - 02e6efbf-ff1e-4bab-8c75-1c74fde625a4: 02e6efbf-ff1e-4bab-738a-e38b0219da5b
+    - 48c7ece1-7621-487c-aecd-f6e78cf0f7a5: 48c7ece1-7621-487c-5132-0918730f085a
+    - e9e33cbb-6fa9-4d1e-b96f-b927af117449: e9e33cbb-6fa9-4d1e-4690-46d850ee8bb6
+  Name: Stop Sign
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 48c7ece1-7621-487c-aecd-f6e78cf0f7a5
+  Components:
+    []

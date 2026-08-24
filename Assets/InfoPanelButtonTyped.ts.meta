@@ -1,0 +1,58 @@
+- !<AssetImportMetadata/bd59dd32-3abe-45c9-acf8-41d808bdbad7>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 4b7920cd-bf96-41ab-91d9-eaea2df2e8e0
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 4b7920cd-bf96-41ab-91d9-eaea2df2e8e0
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> da614c7b-cd6f-4b3a-b7f0-85185c68c328
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/da614c7b-cd6f-4b3a-b7f0-85185c68c328>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 79faf550-815b-4dc3-8f06-5097b79bc61d
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    bottomText: false
+    image: false
+    openButton: false
+    panel: false
+    topText: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - openButton: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      panel: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      topText: ""
+      bottomText: ""
+      image: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - "// @input AssignableType_1 openButton {\"hint\":\"This button's own PinchButton.\"}"
+    - '// @input AssignableType_2 panel {"hint":"The InfoPanelTyped component on calibratepanel."}'
+    - '// @input string topText {"hint":"The line ABOVE the image, for THIS button."}'
+    - '// @input string bottomText {"hint":"The line BELOW the image, for THIS button. Use \\n for a manual line break."}'
+    - '// @input Asset.Texture image {"hint":"The picture THIS button shows. Leave empty to keep whatever the Image already has."}'

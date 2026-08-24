@@ -1,0 +1,42 @@
+- !<ObjectPrefab/cde1d092-297b-434e-9a24-68ce86b36079>
+  PackagePath: ""
+  objects:
+    - !<own> d371a11a-daf8-4905-a5df-36b47507303f
+  LazyLoading: false
+  RetainAssets: true
+- !<RenderMeshVisual/43e31f6f-029c-4e32-885a-08e0a65b8d9a>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 99d86fb9-2464-4656-99ff-8d2a1a695250
+  Mesh: !<reference> 177459c0-51d4-4374-9e15-6cbda2f0631a
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/d371a11a-daf8-4905-a5df-36b47507303f>
+  PrefabRemaps:
+    - 43e31f6f-029c-4e32-885a-08e0a65b8d9a: 626cf78d-f00d-492d-9296-b55a1562d218
+    - d371a11a-daf8-4905-a5df-36b47507303f: 56c81e06-608a-4bd6-847d-f674c081dc49
+  Name: PathTriangle
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 43e31f6f-029c-4e32-885a-08e0a65b8d9a

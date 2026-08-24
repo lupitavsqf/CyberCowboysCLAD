@@ -1,0 +1,65 @@
+- !<AssetImportMetadata/8ba6d413-0113-48ba-8a5b-3b8beed18ed2>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 9176c10b-7ba9-452e-9470-cc6dd218b75b
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 9176c10b-7ba9-452e-9470-cc6dd218b75b
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 55c5372d-5191-4958-aeee-c37ef55e8b0b
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/55c5372d-5191-4958-aeee-c37ef55e8b0b>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: ceb3a861-7143-4e11-a6fe-a83cd0e75f55
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    arenaIdLabel: false
+    arenaStreamer: false
+    closeButton: false
+    closeOnButtons: false
+    openButton: false
+    panelRoot: false
+    placeholder: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - openButton: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      closeButton: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      panelRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      arenaIdLabel: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      arenaStreamer: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      placeholder: "--------"
+      closeOnButtons: !<MappingBased.AssignableType_4[]>
+        []
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - "// @input AssignableType_1 openButton {\"hint\":\"calibratebutton's PinchButton. Press = open/close.\"}"
+    - "// @input AssignableType_2 closeButton {\"hint\":\"The close button's PinchButton, sitting on the panel.\"}"
+    - '// @input SceneObject panelRoot {"hint":"calibratepanel — the panel background. Hidden until Calibrate is pressed."}'
+    - "// @input Component.Text arenaIdLabel {\"hint\":\"The Text inside the panel that shows the arena id. Duplicate ArenaIdLabel and drag the copy's Text here.\"}"
+    - '// @input AssignableType_3 arenaStreamer {"hint":"GameRoot/ArenaRoot — the ArenaStreamerTyped that knows the current arena. Without it the label stays as the placeholder."}'
+    - '// @input string placeholder = "--------" {"hint":"Shown while no arena is being tracked yet."}'
+    - '// @input AssignableType_4[] closeOnButtons {"hint":"Buttons that should also CLOSE this panel (e.g. Choose Lesson, Home). Drag them here."}'

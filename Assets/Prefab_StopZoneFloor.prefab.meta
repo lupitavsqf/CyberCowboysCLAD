@@ -1,0 +1,56 @@
+- !<AssetImportMetadata/2fbe4acb-5a3a-4c5b-850d-f7b45691a6ae>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 284b5d3a-5f15-4b57-8bae-f7dd7aa0a4b4
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 284b5d3a-5f15-4b57-8bae-f7dd7aa0a4b4
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> fd579720-b347-4f20-9b97-8b333ad63869
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<RenderMeshVisual/4717c8f3-a30c-4c4d-58ae-9d0076fd00b2>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 8f821ce2-dd1c-4371-9fa0-de908b3f2533
+  Mesh: !<reference> 557feffa-c082-48aa-a004-db759624d313
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/d2c9368d-220e-4f77-48dc-92a8cf0aa675>
+  PrefabRemaps:
+    []
+  Name: StopZoneFloorPrefabSource
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4717c8f3-a30c-4c4d-58ae-9d0076fd00b2
+- !<ObjectPrefabAssetData/fd579720-b347-4f20-9b97-8b333ad63869>
+  Prototype: !<ObjectOwner/02e61a14-0a21-4337-90c4-0c6634b4b433>
+    PackagePath: ""
+    objects:
+      - !<own> d2c9368d-220e-4f77-48dc-92a8cf0aa675

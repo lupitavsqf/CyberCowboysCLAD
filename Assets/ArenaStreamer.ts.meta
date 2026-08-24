@@ -1,0 +1,123 @@
+- !<AssetImportMetadata/42017f94-8699-4811-a185-02aa726ff181>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> cabf954c-3a51-4423-9d89-97b29e737e42
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> cabf954c-3a51-4423-9d89-97b29e737e42
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> c5a9ebe6-53e2-4ea3-9e6d-7aecd5c20139
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/c5a9ebe6-53e2-4ea3-9e6d-7aecd5c20139>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 7ec12dc8-12b0-4aa6-bca3-001487ab26ca
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    alertAudio: false
+    arenaRoot: false
+    arenaScale: false
+    camera: false
+    defaultObstaclePrefab: false
+    enableLogging: false
+    flipHandedness: false
+    groundOffsetCm: false
+    internetModule: false
+    logObstacleTypes: false
+    obstacleBaseScale: false
+    obstacleTypeNames: false
+    obstacleTypePrefabs: false
+    pathLinePrefab: false
+    pathPointPrefab: false
+    pathPointPrefabGreen: false
+    pathPointPrefabRed: false
+    pathPointPrefabYellow: false
+    pathPointSizeMeters: false
+    pathTrianglePrefab: false
+    pathTriangleSizeMeters: false
+    pathTriangleSpacingMeters: false
+    proximityRadiusMeters: false
+    targetSession: false
+    triangleYawOffsetDeg: false
+    websocketUrl: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - internetModule: !<reference.InternetModule> 00000000-0000-0000-0000-000000000000
+      websocketUrl: "wss://cybercowboys-back.fly.dev/"
+      arenaRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      camera: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      defaultObstaclePrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      obstacleTypeNames: !<string[]>
+        []
+      obstacleTypePrefabs: !<reference.ObjectPrefab[]>
+        - !<reference> 95b212e2-2777-4d65-8cc7-165fa24f43f6
+      pathPointPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      pathPointPrefabGreen: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      pathPointPrefabYellow: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      pathPointPrefabRed: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      pathLinePrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      pathTrianglePrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+      pathTriangleSizeMeters: 0.600000
+      pathTriangleSpacingMeters: !<float> 0.000000
+      triangleYawOffsetDeg: !<float> 0.000000
+      alertAudio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      arenaScale: !<float> 1.000000
+      obstacleBaseScale: !<float> 1.000000
+      pathPointSizeMeters: 0.400000
+      proximityRadiusMeters: 1.500000
+      targetSession: !<float> 0.000000
+      groundOffsetCm: 0.500000
+      flipHandedness: false
+      enableLogging: true
+      logObstacleTypes: true
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Asset.InternetModule internetModule
+    - '// @input string websocketUrl = "wss://cybercowboys-back.fly.dev/" {"hint":"Your fly.io WebSocket endpoint"}'
+    - '// @input SceneObject arenaRoot {"hint":"Empty SceneObject placed on the floor. Everything is parented here. Add an InteractableManipulation (SIK) to drag/rotate it onto the floor."}'
+    - "// @input SceneObject camera {\"hint\":\"The device Camera object (the wearer's head). Used for the proximity sound.\"}"
+    - '// @input Asset.ObjectPrefab defaultObstaclePrefab {"hint":"START HERE: assign your cone prefab. Used for EVERY obstacle until you add type-specific prefabs below. Cones-only works with just this set."}'
+    - "// @input string[] obstacleTypeNames = {} {\"hint\":\"Obstacle type names from the server's object_type, e.g. cone, pole, vertical, cavaletti, barrel, stop. Case-insensitive. A 'stop'/'pause' entry can point at a flat stop-arena decal prefab.\"}"
+    - '// @input Asset.ObjectPrefab[] obstacleTypePrefabs = {} {"hint":"Prefabs matching obstacleTypeNames 1:1 - same order, same length. Drag a Wooden Barrel / Equestrian Pole FBX (or a flat StopZone decal prefab) straight into each slot."}'
+    - '// @input Asset.ObjectPrefab pathPointPrefab {"hint":"PathDot.prefab — the BLUE dot. Also the fallback for any colour whose slot below is empty. If empty, path points are skipped."}'
+    - '// @input Asset.ObjectPrefab pathPointPrefabGreen {"hint":"PathDotGreen.prefab. Falls back to the blue dot if empty."}'
+    - '// @input Asset.ObjectPrefab pathPointPrefabYellow {"hint":"PathDotYellow.prefab. Falls back to the blue dot if empty."}'
+    - '// @input Asset.ObjectPrefab pathPointPrefabRed {"hint":"PathDotRed.prefab. Falls back to the blue dot if empty."}'
+    - '// @input Asset.ObjectPrefab pathLinePrefab {"hint":"Optional: a 1x1x1 cube (pivot centred) stretched between consecutive waypoints to draw the connecting line. If empty, no cube line is drawn."}'
+    - '// @input Asset.ObjectPrefab pathTrianglePrefab {"hint":"Flat triangle decal laid between consecutive waypoints, pointing along the path. Duplicate PathDot.prefab, swap its material to the blue-triangle material, then assign it here. If empty, no triangles are drawn."}'
+    - '// @input float pathTriangleSizeMeters = 0.6 {"hint":"Edge length of each path triangle, in arena-metres."}'
+    - '// @input float pathTriangleSpacingMeters {"hint":"0 = one triangle at the MIDPOINT of every segment. >0 = tile a triangle every N arena-metres along each segment (e.g. 1.5)."}'
+    - '// @input float triangleYawOffsetDeg {"hint":"Spin every triangle by this many degrees if the arrow points the wrong way (try 90 / 180 / -90)."}'
+    - '// @input Component.AudioComponent alertAudio {"hint":"AudioComponent that plays when the wearer reaches an obstacle."}'
+    - '// @input float arenaScale = 1 {"hint":"1 = real size (60x20 m). Lower it to shrink the whole arena to fit a room/table (0.1 is tabletop). Scales positions AND object sizes together."}'
+    - "// @input float obstacleBaseScale = 1 {\"hint\":\"Extra multiplier on every obstacle's size, on top of its DB scale.\"}"
+    - '// @input float pathPointSizeMeters = 0.4 {"hint":"Diameter of the path-point dots / line thickness, in arena-metres."}'
+    - "// @input float proximityRadiusMeters = 1.5 {\"hint\":\"How close (in REAL metres) the wearer's head must get to an obstacle to trigger the sound. At small arenaScale, lower this (e.g. 0.3).\"}"
+    - '// @input float targetSession {"hint":"0 = show the newest session automatically. Set a session_ID to pin one arena."}'
+    - '// @input float groundOffsetCm = 0.5 {"hint":"Lift everything off the floor by this many cm (avoids z-fighting with the ground)."}'
+    - '// @input bool flipHandedness {"hint":"Tick if the arena comes out mirrored (flips forward axis + rotation direction)."}'
+    - // @input bool enableLogging = true
+    - '// @input bool logObstacleTypes = true {"hint":"Logs the distinct object_type strings the server sends, once per snapshot. Use it to find the EXACT name your server uses for pause zones, then add that name to obstacleTypeNames."}'

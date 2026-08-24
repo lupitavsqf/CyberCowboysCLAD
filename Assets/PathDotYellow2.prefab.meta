@@ -1,0 +1,56 @@
+- !<AssetImportMetadata/4a5cf743-d64b-4e79-bb2e-fdef7e856dcb>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 45865cd2-1d3f-4cc5-b65e-702cffbc28d6
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 45865cd2-1d3f-4cc5-b65e-702cffbc28d6
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> db59cbcb-bf76-4f7e-976a-9bfd8a3d9378
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/13ef8cc0-7f2e-43ca-7411-e8b19949c3e6>
+  PrefabRemaps:
+    []
+  Name: PathDot
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9adeeb42-66f5-4ff0-7046-328196fc6d71
+- !<RenderMeshVisual/9adeeb42-66f5-4ff0-7046-328196fc6d71>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 874b7d33-57b7-4d2b-a80a-69b22ab5c0be
+  Mesh: !<reference> 177459c0-51d4-4374-9e15-6cbda2f0631a
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ObjectPrefabAssetData/db59cbcb-bf76-4f7e-976a-9bfd8a3d9378>
+  Prototype: !<ObjectOwner/57cec876-4031-476c-b482-b5c6ddbe5ece>
+    PackagePath: ""
+    objects:
+      - !<own> 13ef8cc0-7f2e-43ca-7411-e8b19949c3e6

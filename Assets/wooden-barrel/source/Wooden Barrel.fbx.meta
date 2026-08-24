@@ -1,0 +1,104 @@
+- !<AssetImportMetadata/d82e766b-8400-43b8-bf7f-ea5cda18a38c>
+  ImportedAssetIds:
+    .hidden/M_Barrel: !<reference> 8738ba05-997a-4aa7-bac2-8ff668671535
+    .hidden/white: !<reference> 069f149b-4c07-49eb-9014-e268d2dbdf2c
+    3311d33af95d85aa: !<reference> f561e6ce-c176-4a9e-a2da-b863940933c1
+    66780cf3a4dcb2b8: !<reference> a4af2744-c246-44e6-9a39-55f383e0d8ac
+    Materials/M_Barrel: !<reference> 5ec0a2f5-2780-428f-8492-056c76c38ede
+    Materials/M_Barrel|M_Barrel|GraphPassInfo: !<reference> bd01d77f-053a-4dff-8f4f-1aaf555057ea
+    Meshes/Barrel: !<reference> d035c751-adca-47dd-9903-ad207f20ed97
+    Scene: !<reference> 70f0e913-f0e9-4259-8495-1d78c49eef48
+    d3077b1e01f6f7df: !<reference> 7ed62d39-7ff4-49d8-a5aa-768ad20e0338
+  ImporterName: FbxImporter
+  PrimaryAsset: !<reference> 70f0e913-f0e9-4259-8495-1d78c49eef48
+  PackageType: LegacyPackage
+  LegacyPackagePolicy: CanBeUnpackedTransparent
+  ExtraData:
+    {}
+  AssetDataMap:
+    Scene: !<own> 249289cc-9deb-4fc4-a80f-de3c804e2715
+  DependentFiles:
+    []
+  ImporterSettings: !<FbxImporterSettings>
+    UseLegacyImporter: false
+    WithMaterials: true
+    NamingConvention: ByCategorySanitizeV2
+    PersistentIdGenerationAlgorithm: DescriptorBased
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30.000000
+    ImportVertexColor: true
+    ImportTangentsAndBinormals: true
+    RegenerateTangentsAndBinormals: false
+    RegenerateNormalsForSkinnedMeshes: true
+    ImportBlendShapeAnimation: true
+    ImportVertexAnimation: true
+    GeneratePivots: true
+    TriangulateNURBS: true
+    UseLegacyFbxLoader: false
+  CompressionSettings: !<ComplexCompressionSettings>
+    Presets:
+      None Compression: !<FileCompressionSettings>
+        {}
+      Performance Compression: !<PerformanceCompressionSettings>
+        Level: Medium
+        Mipmap: false
+    ExtensionMappings:
+      mesh: None Compression
+      jpg: Performance Compression
+    Overrides:
+      {}
+- !<ObjectPrefabAssetData/249289cc-9deb-4fc4-a80f-de3c804e2715>
+  Prototype: !<ObjectOwner/e7be7df4-6774-4aa5-b30c-5597fccaed83>
+    PackagePath: ""
+    objects:
+      - !<own> a4af2744-c246-44e6-65c6-aa0c7c1f2753
+- !<RenderMeshVisual/7ed62d39-7ff4-49d8-5a55-89752df1fcc7>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 5ec0a2f5-2780-428f-8492-056c76c38ede
+  Mesh: !<reference> d035c751-adca-47dd-9903-ad207f20ed97
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/a4af2744-c246-44e6-65c6-aa0c7c1f2753>
+  PrefabRemaps:
+    []
+  Name: Wooden Barrel
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> f561e6ce-c176-4a9e-5d25-479c6bf6cc3e
+  Components:
+    []
+- !<SceneObject/f561e6ce-c176-4a9e-5d25-479c6bf6cc3e>
+  PrefabRemaps:
+    []
+  Name: Barrel
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7ed62d39-7ff4-49d8-5a55-89752df1fcc7

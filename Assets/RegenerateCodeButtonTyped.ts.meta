@@ -1,0 +1,49 @@
+- !<AssetImportMetadata/54323b26-e18f-4ea5-8e39-57ca76897d5f>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> d731aaa1-5c87-4ad3-b6ff-fae91403db75
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> d731aaa1-5c87-4ad3-b6ff-fae91403db75
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 71185b03-f927-4606-909e-f4dddc483a62
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/71185b03-f927-4606-909e-f4dddc483a62>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: e836871f-11dd-4d3c-9432-faa9a4c13b06
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    arenaStreamer: false
+    pinchButton: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - pinchButton: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      arenaStreamer: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - "// @input AssignableType_1 pinchButton {\"hint\":\"The Regenerate button's PinchButton component.\"}"
+    - '// @input AssignableType_2 arenaStreamer {"hint":"The object running ArenaStreamerTyped (same one Start / Edit / Reload use)."}'

@@ -1,0 +1,212 @@
+- !<AssetImportMetadata/44f352c4-9560-4c59-b511-f9d61b28620a>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 32c187b2-7c2b-433e-9b10-245d45869c87
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 32c187b2-7c2b-433e-9b10-245d45869c87
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 04f86886-4b4c-4799-b884-1b8a224b531a
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/04f86886-4b4c-4799-b884-1b8a224b531a>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: ab96bf0a-426d-4c8c-a91f-f3acc0188e39
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    advancedThumbs: false
+    arenaStreamer: false
+    autoPlaceScrollButtons: false
+    cardForwardCm: false
+    cardHeightCm: false
+    cardPrefab: false
+    clipBottomCm: false
+    clipMarginCm: false
+    clipTopCm: false
+    closeButton: false
+    closeOnButtons: false
+    colGapCm: false
+    columns: false
+    elementaryThumbs: false
+    headerForwardCm: false
+    headerObject: false
+    headerText: false
+    headerTopCm: false
+    headerXCm: false
+    intermediateThumbs: false
+    labelForwardCm: false
+    labelGradient: false
+    labelScale: false
+    labelXCm: false
+    labelYCm: false
+    listContainer: false
+    loadButtonChildName: false
+    metaChildName: false
+    metaWrapChars: false
+    noviceThumbs: false
+    openButton: false
+    panelRoot: false
+    panelWidthCm: false
+    remoteMedia: false
+    rowGapCm: false
+    scrollBtnGapCm: false
+    scrollBtnXCm: false
+    scrollBtnYCm: false
+    scrollDownButton: false
+    scrollStepCm: false
+    scrollUpButton: false
+    showHeader: false
+    showSectionLabels: false
+    showThumbnails: false
+    tagChildName: false
+    textScale: false
+    thumbChildName: false
+    titleChildName: false
+    titleWrapChars: false
+    topStartCm: false
+    uiFont: false
+    viewHeightCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - arenaStreamer: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      openButton: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      closeButton: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      panelRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      listContainer: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      cardPrefab: !<reference.ObjectPrefab> 4b1c2958-16c7-4cf6-ae77-caeff9497fc0
+      uiFont: !<reference.Font> 4ca5eb05-dde9-49e8-b4e2-e81841f1a2d8
+      cardHeightCm: !<float> 11.000000
+      columns: !<float> 2.000000
+      panelWidthCm: !<float> 32.000000
+      colGapCm: !<float> 2.000000
+      rowGapCm: !<float> 2.000000
+      topStartCm: !<float> 11.000000
+      headerTopCm: !<float> 15.000000
+      headerXCm: !<float> 0.000000
+      headerObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      scrollBtnXCm: !<float> 12.000000
+      scrollBtnYCm: !<float> 15.000000
+      scrollBtnGapCm: !<float> 5.000000
+      cardForwardCm: 1.500000
+      headerForwardCm: 0.800000
+      labelForwardCm: 0.500000
+      textScale: !<float> 1.000000
+      titleWrapChars: !<float> 18.000000
+      metaWrapChars: !<float> 24.000000
+      labelXCm: !<float> 0.000000
+      labelYCm: !<float> 0.000000
+      labelScale: !<float> 1.000000
+      scrollUpButton: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
+      scrollDownButton: !<MappingBased.AssignableType_5> 00000000-0000-0000-0000-000000000000
+      scrollStepCm: !<float> 8.000000
+      viewHeightCm: !<float> 26.000000
+      autoPlaceScrollButtons: false
+      clipTopCm: !<float> 0.000000
+      clipBottomCm: !<float> 0.000000
+      clipMarginCm: !<float> 0.000000
+      closeOnButtons: !<MappingBased.AssignableType_6[]>
+        []
+      showHeader: true
+      showSectionLabels: true
+      headerText: Choose Lesson
+      labelGradient: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      showThumbnails: true
+      remoteMedia: !<MappingBased.AssignableType_7> 00000000-0000-0000-0000-000000000000
+      noviceThumbs: !<reference.Texture[]>
+        - !<reference> c365171e-e337-4693-925f-74c4d8a27ccd
+        - !<reference> 7d777491-ac92-4922-8e47-72b3919085c1
+        - !<reference> 8da38f21-f503-4a44-ba91-72632eee34cc
+      elementaryThumbs: !<reference.Texture[]>
+        - !<reference> 7eb613d6-95dd-42e8-9bce-c64b82906a34
+        - !<reference> d5d36e1f-5b64-4f9b-b135-89d9bd3999f1
+        - !<reference> e3ebeb43-1909-4a59-8ff4-ca690e610aa5
+      intermediateThumbs: !<reference.Texture[]>
+        - !<reference> 9ff47842-18d5-474a-86ee-96e853235321
+        - !<reference> 530c8ba4-b3a1-48a5-b907-5595a4ffa658
+        - !<reference> 83140f64-58c7-4a27-9b9d-8a552cc4eee4
+      advancedThumbs: !<reference.Texture[]>
+        - !<reference> 639d1580-09ad-4072-b4b7-fe5a5a8bbc2e
+        - !<reference> bae82e2a-4559-4cd8-b01b-7a696cfef15b
+        - !<reference> 7b652f17-178a-4268-90bd-a8cc451701a5
+      titleChildName: Title
+      tagChildName: Tag
+      metaChildName: Meta
+      thumbChildName: Thumb
+      loadButtonChildName: LoadButton
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input AssignableType_1 arenaStreamer
+    - // @input AssignableType_2 openButton
+    - // @input AssignableType_3 closeButton
+    - // @input SceneObject panelRoot
+    - // @input SceneObject listContainer
+    - // @input Asset.ObjectPrefab cardPrefab
+    - '// @input Asset.Font uiFont {"hint":"Font for the header + section labels."}'
+    - '// @input float cardHeightCm = 8 {"hint":"SIZE DIAL. Height of one card in cm. Everything scales from this."}'
+    - '// @input float columns = 2 {"hint":"Cards per row."}'
+    - '// @input float panelWidthCm = 30 {"hint":"Total width across all columns, in cm."}'
+    - '// @input float colGapCm = 1.5 {"hint":"Gap between columns, in cm."}'
+    - '// @input float rowGapCm = 1.5 {"hint":"Gap between rows, in cm."}'
+    - '// @input float topStartCm = 11 {"hint":"Where the first section starts, in cm ABOVE the panel centre."}'
+    - '// @input float headerTopCm = 15 {"hint":"Header height above the panel centre, in cm."}'
+    - '// @input float headerXCm {"hint":"Move the header (CHOOSE LESSON) left/right, in cm from the panel centre. Negative = left, e.g. to line it up with the NOVICE labels."}'
+    - '// @input SceneObject headerObject {"hint":"OPTIONAL: if your header is an IMAGE object (e.g. the metallic CHOOSE LESSON), drag it here so Header X/Top Cm move it too."}'
+    - '// @input float scrollBtnXCm = 12 {"hint":"Scroll buttons: X of the UP button, in cm from the panel centre (put it to the right of the header)."}'
+    - '// @input float scrollBtnYCm = 15 {"hint":"Scroll buttons: Y in cm above the panel centre (match Header Top Cm to line up with the header)."}'
+    - '// @input float scrollBtnGapCm = 5 {"hint":"Gap between the up and down scroll buttons, in cm."}'
+    - '// @input float cardForwardCm = 1.2 {"hint":"How far cards/text sit in FRONT of the panel background, in cm."}'
+    - '// @input float headerForwardCm = 0.8 {"hint":"DEPTH: extra cm the CHOOSE A LESSON header floats in FRONT of the cards. 0 = flat with everything else."}'
+    - '// @input float labelForwardCm = 0.5 {"hint":"DEPTH: extra cm the NOVICE / ELEMENTARY / ... labels float in FRONT of the cards. 0 = flat with everything else."}'
+    - '// @input float textScale = 1 {"hint":"Fine-tune of all card text size (1 = default)."}'
+    - '// @input float titleWrapChars = 18 {"hint":"Wrap titles and tags onto a new line after this many characters (breaks at spaces)."}'
+    - '// @input float metaWrapChars = 24 {"hint":"Wrap the meta line (points / obstacles) after this many characters."}'
+    - '// @input float labelXCm {"hint":"LEFT EDGE of the level labels, in cm from the panel centre. Labels are left-aligned. 0 = starts at centre; negative = further left."}'
+    - '// @input float labelYCm {"hint":"Vertical nudge of the level labels, in cm. Positive = higher above its group; negative = lower."}'
+    - '// @input float labelScale = 1 {"hint":"Size of the level labels (1 = default). Lower it, e.g. 0.8, to make them smaller."}'
+    - '// @input AssignableType_4 scrollUpButton {"hint":"Optional PinchButton that scrolls the list UP."}'
+    - '// @input AssignableType_5 scrollDownButton {"hint":"Optional PinchButton that scrolls the list DOWN."}'
+    - '// @input float scrollStepCm = 8 {"hint":"How far each scroll press moves the list, in cm."}'
+    - '// @input float viewHeightCm = 26 {"hint":"Visible height of the list area inside the panel, in cm. Taller content can be scrolled."}'
+    - "// @input bool autoPlaceScrollButtons {\"hint\":\"Leave OFF to place the Up/Down buttons BY HAND in the scene (drag them where you want and they stay put). Turn ON only if you'd rather auto-position them from the Scroll Btn X/Y/Gap Cm values.\"}"
+    - '// @input float clipTopCm {"hint":"TOP CLIP: cards whose centre goes ABOVE this many cm from the panel centre are hidden. Leave 0 to auto-use Top Start Cm as the top edge."}'
+    - '// @input float clipBottomCm {"hint":"BOTTOM CLIP: cards whose centre drops BELOW this many cm from the panel centre are hidden. Leave 0 to auto-use (Top Start Cm − View Height Cm)."}'
+    - '// @input float clipMarginCm {"hint":"CLIP SLACK, in cm. Added outside both cutoffs so a card that is only slightly over the edge still shows. Negative tightens (hides sooner, so nothing pokes out); e.g. set to −(half a card) for no overflow."}'
+    - '// @input AssignableType_6[] closeOnButtons {"hint":"Buttons that should CLOSE this panel when pressed (e.g. Home, Edit, Reload). Drag them here."}'
+    - // @input bool showHeader
+    - // @input bool showSectionLabels
+    - '// @input string headerText = "CHOOSE A LESSON"'
+    - '// @input Asset.Texture labelGradient {"hint":"OPTIONAL gradient image for the gold texts (CHOOSE LESSON header + NOVICE/ELEMENTARY/... labels). Leave EMPTY to use the built-in dark-brown -> rust -> yellow -> beige gradient. Drop any vertical gradient PNG here to restyle them."}'
+    - // @input bool showThumbnails = true
+    - "// @input AssignableType_7 remoteMedia {\"hint\":\"OPTIONAL: only needed to download lessons you didn't bundle.\"}"
+    - '// @input Asset.Texture[] noviceThumbs {"hint":"Novice thumbnails IN ORDER: novice1, novice2, ..."}'
+    - '// @input Asset.Texture[] elementaryThumbs {"hint":"Elementary thumbnails IN ORDER"}'
+    - '// @input Asset.Texture[] intermediateThumbs {"hint":"Intermediate thumbnails IN ORDER"}'
+    - '// @input Asset.Texture[] advancedThumbs {"hint":"Advanced thumbnails IN ORDER"}'
+    - '// @input string titleChildName = "Title"'
+    - '// @input string tagChildName = "Tag"'
+    - '// @input string metaChildName = "Meta"'
+    - '// @input string thumbChildName = "Thumb"'
+    - '// @input string loadButtonChildName = "LoadButton"'

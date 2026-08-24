@@ -1,0 +1,49 @@
+- !<AssetImportMetadata/da8eed59-0749-4cc7-bfc9-5eb401db9384>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 4bcb7d9f-033c-4297-9f10-83b570cc4296
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 4bcb7d9f-033c-4297-9f10-83b570cc4296
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 58345313-e3b8-4fc5-ba5b-e6855f7f14bb
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/58345313-e3b8-4fc5-ba5b-e6855f7f14bb>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 75f370cb-d1f3-4a71-9c63-82ff7ce5af56
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    arenaStreamer: false
+    pinchButton: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - pinchButton: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      arenaStreamer: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - "// @input AssignableType_1 pinchButton {\"hint\":\"The Change Direction button's PinchButton component.\"}"
+    - '// @input AssignableType_2 arenaStreamer {"hint":"The object running ArenaStreamerTyped (same one Start / Edit / Reload use)."}'

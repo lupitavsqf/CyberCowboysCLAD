@@ -1,0 +1,148 @@
+- !<AssetImportMetadata/62397326-2df7-4548-a76e-f08572afea0d>
+  ImportedAssetIds:
+    .hidden/Material 1: !<reference> 82e4d63e-b5fc-4ece-88a5-0ce0f700d808
+    09c1609493715f83: !<reference> a2843f1a-9f2a-44b4-a47b-ea56c05c2291
+    4832e4ed5749227e: !<reference> 489cb24a-4fd2-41b7-bd4d-3fc21bc4d63e
+    4a3e924fad0e2f27: !<reference> c9763002-94a7-4831-9fc9-b479f72fb813
+    66780cf3a4dcb2b8: !<reference> 693fc4b8-687e-4c03-bf88-1bac36288130
+    8a6d25770877ec0c: !<reference> 2964baa5-793d-49f9-aa7d-d59b40389798
+    Materials/Material 1: !<reference> 7f74fa0f-50d1-4a21-a82b-817229e5bffc
+    Materials/Material 1|Material 1|GraphPassInfo: !<reference> e4b6905d-f7a7-4234-acde-af11b3933a96
+    Meshes/barrel.obj: !<reference> dfe27371-e34b-4397-961a-90267b41cddf
+    Scene: !<reference> e684c7b3-9eac-4643-8d49-3ec453d6d327
+    Textures/texture: !<reference> 0491d249-7d7e-48f6-8ba6-bd3bbd08b247
+    fd034b040f458e80: !<reference> b25bba87-4b91-41d4-8163-c7713714f489
+  ImporterName: GltfImporter
+  PrimaryAsset: !<reference> e684c7b3-9eac-4643-8d49-3ec453d6d327
+  PackageType: LegacyPackage
+  LegacyPackagePolicy: CanBeUnpackedTransparent
+  ExtraData:
+    {}
+  AssetDataMap:
+    Scene: !<own> 4038d9bc-7a04-41c2-81b4-c3f18e58cdba
+  DependentFiles:
+    []
+  ImporterSettings: !<GltfImporterSettings>
+    UseLegacyImporter: false
+    WithMaterials: true
+    NamingConvention: ByCategorySanitizeV2
+    PersistentIdGenerationAlgorithm: DescriptorBased
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30.000000
+    ImportVertexColor: true
+    ImportTangents: true
+    ImportMorphTargetAnimation: true
+    ConvertMetersToCentimeters: true
+    RegenerateTangents: false
+  CompressionSettings: !<ComplexCompressionSettings>
+    Presets:
+      None Compression: !<FileCompressionSettings>
+        {}
+      Performance Compression: !<PerformanceCompressionSettings>
+        Level: Medium
+        Mipmap: false
+    ExtensionMappings:
+      mesh: None Compression
+      png: Performance Compression
+    Overrides:
+      {}
+- !<RenderMeshVisual/2964baa5-793d-49f9-5582-2a64bfc76867>
+  PrefabRemaps:
+    []
+  Name: barrel.obj
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 7f74fa0f-50d1-4a21-a82b-817229e5bffc
+  Mesh: !<reference> dfe27371-e34b-4397-961a-90267b41cddf
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<ObjectPrefabAssetData/4038d9bc-7a04-41c2-81b4-c3f18e58cdba>
+  Prototype: !<ObjectOwner/c859d31b-6ce9-45db-8d6c-d02720a77163>
+    PackagePath: ""
+    objects:
+      - !<own> 693fc4b8-687e-4c03-4077-e453c9d77ecf
+- !<SceneObject/489cb24a-4fd2-41b7-42b2-c03de43b29c1>
+  PrefabRemaps:
+    []
+  Name: world
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> b25bba87-4b91-41d4-7e9c-388ec8eb0b76
+  Components:
+    []
+- !<SceneObject/693fc4b8-687e-4c03-4077-e453c9d77ecf>
+  PrefabRemaps:
+    []
+  Name: barrel
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> c9763002-94a7-4831-6036-4b8608d047ec
+  Components:
+    []
+- !<SceneObject/a2843f1a-9f2a-44b4-5b84-15a93fa3dd6e>
+  PrefabRemaps:
+    []
+  Name: Scene0
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 489cb24a-4fd2-41b7-42b2-c03de43b29c1
+  Components:
+    []
+- !<SceneObject/b25bba87-4b91-41d4-7e9c-388ec8eb0b76>
+  PrefabRemaps:
+    []
+  Name: barrel.obj
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2964baa5-793d-49f9-5582-2a64bfc76867
+- !<SceneObject/c9763002-94a7-4831-6036-4b8608d047ec>
+  PrefabRemaps:
+    []
+  Name: Scenes
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> a2843f1a-9f2a-44b4-5b84-15a93fa3dd6e
+  Components:
+    []

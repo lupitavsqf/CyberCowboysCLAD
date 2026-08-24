@@ -1,0 +1,25 @@
+UV FIX - mirrored text on the reverse side
+==========================================
+
+Issue
+-----
+The Banner and GroundDecal meshes are built double-sided: every quad is
+duplicated with reversed winding. Both copies referenced the SAME UV
+indices, so the back-facing copy showed the texture mirrored -- "START"
+/ "FINISH" read backwards from one side of the gate.
+
+The PNG textures were never the problem; they are correct as authored.
+
+Fix
+---
+The back-facing duplicates (normal -Z on Banner, normal -Y on
+GroundDecal) now reference horizontally mirrored UVs (u -> 1-u).
+The front-facing geometry is untouched. Text now reads correctly from
+both sides. Only the .obj files changed.
+
+If it still looks mirrored
+--------------------------
+Some importers convert right-handed OBJ to a left-handed engine space by
+negating the X axis, which mirrors everything. After this fix the two
+sides are consistent, so if BOTH now read backwards, flip the BaseColor
+PNG horizontally once and both sides will be correct.

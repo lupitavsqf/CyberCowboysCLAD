@@ -1,0 +1,70 @@
+- !<AssetImportMetadata/4663bc9e-2ae5-4bf8-9169-2cdd80060955>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 24ed19c4-4f9e-4527-a9e5-11e53016d6c4
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 24ed19c4-4f9e-4527-a9e5-11e53016d6c4
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> d35aaff2-8413-4893-a97c-59b97c8c1388
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/d35aaff2-8413-4893-a97c-59b97c8c1388>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: fe194a78-d6d6-47c7-9cde-fc52de2ad929
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    arenaStreamer: false
+    creditsButton: false
+    creditsScreen: false
+    gameRoot: false
+    homeButton: false
+    returnButton: false
+    startButton: false
+    startScreen: false
+    webView: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - startScreen: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      creditsScreen: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      gameRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      startButton: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      creditsButton: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      returnButton: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      homeButton: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
+      webView: !<MappingBased.AssignableType_5> 00000000-0000-0000-0000-000000000000
+      arenaStreamer: !<MappingBased.AssignableType_6> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input SceneObject startScreen {"hint":"The START screen object: main logo + Start button + Credits button."}'
+    - '// @input SceneObject creditsScreen {"hint":"The CREDITS screen object: credits.png + the Return button."}'
+    - '// @input SceneObject gameRoot {"hint":"Your GAME root: the single object holding ALL gameplay (and the WebView). Hidden until Start."}'
+    - "// @input AssignableType_1 startButton {\"hint\":\"The Start button's PinchButton component.\"}"
+    - "// @input AssignableType_2 creditsButton {\"hint\":\"The Credits button's PinchButton component.\"}"
+    - "// @input AssignableType_3 returnButton {\"hint\":\"The Return button's PinchButton component (on the credits screen).\"}"
+    - '// @input AssignableType_4 homeButton {"hint":"OPTIONAL: always-visible Home button. Returns to the start screen and stops the WebView."}'
+    - '// @input AssignableType_5 webView {"hint":"OPTIONAL: the WebView component. Stopped on Home, reloaded on Start."}'
+    - '// @input AssignableType_6 arenaStreamer {"hint":"OPTIONAL: the ArenaStreamerTyped object. If set, pressing Start also generates a new arena (new arena_id + session_ID) so the on-screen arena code fills in."}'

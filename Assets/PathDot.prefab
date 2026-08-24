@@ -1,0 +1,42 @@
+- !<ObjectPrefab/c99f4ed8-e974-4ff9-b91b-f31bea0626b3>
+  PackagePath: ""
+  objects:
+    - !<own> fc90abba-6402-4fed-8700-2ecd34910f8d
+  LazyLoading: false
+  RetainAssets: true
+- !<RenderMeshVisual/f6e28b7a-3444-4220-aef8-c819a2d85ff4>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> a19cdd75-5d95-4d17-a3a1-5c8f57b7a1ec
+  Mesh: !<reference> 177459c0-51d4-4374-9e15-6cbda2f0631a
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/fc90abba-6402-4fed-8700-2ecd34910f8d>
+  PrefabRemaps:
+    - f6e28b7a-3444-4220-aef8-c819a2d85ff4: f6e28b7a-3444-4220-5107-37e65d27a00b
+    - fc90abba-6402-4fed-8700-2ecd34910f8d: fc90abba-6402-4fed-78ff-d132cb6ef072
+  Name: PathDot
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> f6e28b7a-3444-4220-aef8-c819a2d85ff4

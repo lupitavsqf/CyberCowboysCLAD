@@ -1,0 +1,70 @@
+- !<AssetImportMetadata/b80c0085-4763-4c59-b985-94fc1dcfeb3b>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 0886e66b-3081-4c10-b465-3643dbf85673
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 0886e66b-3081-4c10-b465-3643dbf85673
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 6696e99d-8f77-41d7-81f4-12f2e1f6aefd
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/6696e99d-8f77-41d7-81f4-12f2e1f6aefd>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 87dd3c4d-6476-4a49-a163-538b08d42c54
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    camera: false
+    decimals: false
+    glitchRejectMps: false
+    horizontalOnly: false
+    label: false
+    prefix: false
+    showUnit: false
+    smoothingSeconds: false
+    units: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - camera: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      label: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      units: km/h
+      prefix: ""
+      decimals: !<float> 1.000000
+      showUnit: true
+      smoothingSeconds: 0.300000
+      horizontalOnly: false
+      glitchRejectMps: !<float> 25.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input SceneObject camera {"hint":"The device Camera / head object. Speed = how fast this moves through the world."}'
+    - '// @input Component.Text label {"hint":"Text to write the speed into. If empty, a Text on THIS object is used."}'
+    - '// @input string units = "km/h" {"hint":"Units to display: \"m/s\", \"km/h\" or \"mph\"."}'
+    - '// @input string prefix {"hint":"Text shown before the number, e.g. \"Speed: \". Leave empty for just the value."}'
+    - '// @input float decimals = 1 {"hint":"Decimal places to show."}'
+    - '// @input bool showUnit = true {"hint":"Also show the unit after the number (e.g. 12.4 km/h)."}'
+    - '// @input float smoothingSeconds = 0.3 {"hint":"Smoothing time in seconds. 0 = raw/jittery; 0.2-0.5 = steady, readable; higher = smoother but laggier."}'
+    - '// @input bool horizontalOnly {"hint":"Measure only horizontal (ground) speed, ignoring up/down head bob. OFF = true 3D device speed."}'
+    - '// @input float glitchRejectMps = 25 {"hint":"Ignore any single frame implying more than this many m/s (tracking jumps / recalibration teleports). 0 = never ignore. ~25 catches glitches while allowing real motion."}'
